@@ -1,0 +1,697 @@
+<?xml version="1.0"?>
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+
+<title>Preface</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml"
+          mdml-version="0.5">
+  <!-- WARNING! The 'metadata' section is read only. Do not edit below.
+       Changes to the metadata section in the source will not be saved. -->
+  <md:repository>http://cnx.org/content</md:repository>
+  <md:content-url>http://cnx.org/content/m46844/latest/</md:content-url>
+  <md:content-id>m46844</md:content-id>
+  <md:title>Preface</md:title>
+  <md:version>1.3</md:version>
+  <md:created>2013/06/17 16:41:12 -0500</md:created>
+  <md:revised>2013/06/27 09:49:54.282 GMT-5</md:revised>
+  <md:actors>
+    <md:person userid="cnxap">
+      <md:firstname>CNX</md:firstname>
+      <md:surname>Anatomy and Physiology</md:surname>
+      <md:fullname>CNX Anatomy and Physiology</md:fullname>
+      <md:email>info@openstaxcollege.org</md:email>
+    </md:person>
+  </md:actors>
+  <md:roles>
+    <md:role type="author">cnxap</md:role>
+    <md:role type="maintainer">cnxap</md:role>
+    <md:role type="licensor">cnxap</md:role>
+  </md:roles>
+  <md:license url="http://creativecommons.org/licenses/by/3.0/" />
+  <!-- For information on license requirements for use or modification, see license url in the
+       above <md:license> element.
+       For information on formatting required attribution, see the URL:
+         CONTENT_URL/content_info#cnx_cite_header
+       where CONTENT_URL is the value provided above in the <md:content-url> element.
+  -->
+  <md:keywordlist>
+    <md:keyword>acid-base balance</md:keyword>
+    <md:keyword>action potential</md:keyword>
+    <md:keyword>adrenal</md:keyword>
+    <md:keyword>anatomy</md:keyword>
+    <md:keyword>antibody</md:keyword>
+    <md:keyword>appendicular skeleton</md:keyword>
+    <md:keyword>atom</md:keyword>
+    <md:keyword>autonomic nervous system</md:keyword>
+    <md:keyword>axial skeleton</md:keyword>
+    <md:keyword>blood</md:keyword>
+    <md:keyword>body fluid</md:keyword>
+    <md:keyword>bone</md:keyword>
+    <md:keyword>capillary</md:keyword>
+    <md:keyword>cardiac</md:keyword>
+    <md:keyword>cardiovascular system</md:keyword>
+    <md:keyword>cell</md:keyword>
+    <md:keyword>central nervous system</md:keyword>
+    <md:keyword>chemical</md:keyword>
+    <md:keyword>circulatory pathway</md:keyword>
+    <md:keyword>connective tissue</md:keyword>
+    <md:keyword>cytoplasm</md:keyword>
+    <md:keyword>development</md:keyword>
+    <md:keyword>diet</md:keyword>
+    <md:keyword>digestion</md:keyword>
+    <md:keyword>digestive system</md:keyword>
+    <md:keyword>DNA</md:keyword>
+    <md:keyword>electrical activity</md:keyword>
+    <md:keyword>electrolyte</md:keyword>
+    <md:keyword>element</md:keyword>
+    <md:keyword>endocrine</md:keyword>
+    <md:keyword>energy</md:keyword>
+    <md:keyword>epithelial</md:keyword>
+    <md:keyword>erythrocyte</md:keyword>
+    <md:keyword>esophagus</md:keyword>
+    <md:keyword>exam</md:keyword>
+    <md:keyword>fascicle</md:keyword>
+    <md:keyword>fertilization</md:keyword>
+    <md:keyword>fetal</md:keyword>
+    <md:keyword>fluid balance</md:keyword>
+    <md:keyword>gallbladder</md:keyword>
+    <md:keyword>gland</md:keyword>
+    <md:keyword>heart</md:keyword>
+    <md:keyword>heat balance</md:keyword>
+    <md:keyword>hemostasis</md:keyword>
+    <md:keyword>homeostasis</md:keyword>
+    <md:keyword>hormone</md:keyword>
+    <md:keyword>hypothalamus</md:keyword>
+    <md:keyword>immune system</md:keyword>
+    <md:keyword>immunity</md:keyword>
+    <md:keyword>inheritance</md:keyword>
+    <md:keyword>inorganic compound</md:keyword>
+    <md:keyword>integumentary system</md:keyword>
+    <md:keyword>intestine</md:keyword>
+    <md:keyword>joint</md:keyword>
+    <md:keyword>kidney</md:keyword>
+    <md:keyword>lactation</md:keyword>
+    <md:keyword>leukocyte</md:keyword>
+    <md:keyword>liver</md:keyword>
+    <md:keyword>lung</md:keyword>
+    <md:keyword>lymphatic system</md:keyword>
+    <md:keyword>lymphocyte</md:keyword>
+    <md:keyword>metabolism</md:keyword>
+    <md:keyword>motor response</md:keyword>
+    <md:keyword>muscle</md:keyword>
+    <md:keyword>nervous system</md:keyword>
+    <md:keyword>neurological</md:keyword>
+    <md:keyword>neuron</md:keyword>
+    <md:keyword>nucleus</md:keyword>
+    <md:keyword>nutrition</md:keyword>
+    <md:keyword>organic compound</md:keyword>
+    <md:keyword>pancreas</md:keyword>
+    <md:keyword>pathogen</md:keyword>
+    <md:keyword>pectoral girdle</md:keyword>
+    <md:keyword>pelvis</md:keyword>
+    <md:keyword>peripheral nervous system</md:keyword>
+    <md:keyword>pharynx</md:keyword>
+    <md:keyword>physiology</md:keyword>
+    <md:keyword>placental hormone</md:keyword>
+    <md:keyword>platelet</md:keyword>
+    <md:keyword>protein</md:keyword>
+    <md:keyword>renal</md:keyword>
+    <md:keyword>reproduction</md:keyword>
+    <md:keyword>reproductive system</md:keyword>
+    <md:keyword>respiration</md:keyword>
+    <md:keyword>respiratory system</md:keyword>
+    <md:keyword>sensory perception</md:keyword>
+    <md:keyword>skeletal system</md:keyword>
+    <md:keyword>skeleton</md:keyword>
+    <md:keyword>skin</md:keyword>
+    <md:keyword>skull</md:keyword>
+    <md:keyword>stomach</md:keyword>
+    <md:keyword>thoracic cage</md:keyword>
+    <md:keyword>thorax</md:keyword>
+    <md:keyword>tissue</md:keyword>
+    <md:keyword>urinary system</md:keyword>
+    <md:keyword>urine</md:keyword>
+    <md:keyword>vascular system</md:keyword>
+    <md:keyword>vertebrae</md:keyword>
+    <md:keyword>water balance</md:keyword>
+  </md:keywordlist>
+  <md:subjectlist>
+    <md:subject>Science and Technology</md:subject>
+  </md:subjectlist>
+  <md:abstract>Human Anatomy and Physiology is designed for the two-semester anatomy and physiology course taken by life science and allied health students.  The textbook follows the scope and sequence of most Human Anatomy and Physiology courses, and its coverage and organization were informed by hundreds of instructors who teach the course.  Instructors can customize the book, adapting it to the approach that works best in their classroom.  
+The artwork for this textbook is aimed focusing student learning through a powerful blend of traditional depictions and instructional innovations.   Color is used sparingly, to emphasize the most important aspects of any given illustration.  Significant use of micrographs from the University of Michigan complement the illustrations, and provide the students with a meaningful alternate depiction of each concept.  Finally, enrichment elements provide relevance and deeper context for students, particularly in the areas of health, disease, and information relevant to their intended careers.</md:abstract>
+  <md:language>en</md:language>
+  <!-- WARNING! The 'metadata' section is read only. Do not edit above.
+       Changes to the metadata section in the source will not be saved. -->
+</metadata>
+
+<content>
+  <para id="delete_me">Welcome to <emphasis effect="italics">Human Anatomy and Physiology</emphasis>, an OpenStax College resource. We created this textbook with several goals in mind: accessibility, customization, and student engagement—helping students reach high levels of academic scholarship. Instructors and students alike will find that this textbook offers a thorough introduction to the content in an accessible format.    </para><section id="eip-7"><title>About OpenStax College</title><para id="eip-463">
+OpenStax College is a nonprofit organization committed to improving student access to quality learning materials. Our free textbooks are developed and peer-reviewed by educators to ensure that they are readable, accurate, and organized in accordance with the scope and sequence requirements of today’s college courses. Unlike traditional textbooks, OpenStax College resources live online and are owned by the community of educators using them. Through partnerships with companies and foundations committed to reducing costs for students, we are working to improve access to higher education for all. OpenStax College is an initiative of Rice University and is made possible through the generous support of several philanthropic foundations.
+</para></section><section id="eip-374"><title>About OpenStax College’s Resources</title><para id="eip-0">
+OpenStax College resources provide quality academic instruction. Three key features set our materials apart from others: 1) They can be easily customized by instructors for each class, 2) they are “living” resources that grow online through contributions from science educators, and 3) they are available for free or for a minimal cost.
+</para><section id="eip-262"><title>Customization</title><para id="eip-362">
+OpenStax College learning resources are conceived and written with flexibility in mind so that they can be customized for each course. Our textbooks provide a solid foundation on which instructors can build their own texts. Instructors can select the sections that are most relevant to their curricula and create a textbook that speaks directly to the needs of their students. Instructors are encouraged to expand on existing examples in the text by adding unique context via geographically localized applications and topical connections. 
+</para>
+
+<para id="eip-id1166206909033"><emphasis effect="italics">Human Anatomy and Physiology</emphasis> can be easily customized using our online platform (https://openstaxcollege.org/textbooks/anatomy-and-physiology/adapt). The text is arranged in a modular chapter format. Simply select the content most relevant to your syllabus and create a textbook that addresses the needs of your class. This customization feature will ensure that your textbook reflects the goals of your course.</para></section><section id="eip-185"><title>Curation</title><para id="eip-155">To broaden access and encourage community curation, <emphasis effect="italics">Human Anatomy and Physiology</emphasis> is “open source” under a Creative Commons Attribution (CC BY) license. Members of the scientific community are invited to submit examples, emerging research, and other feedback to enhance and strengthen the material, keeping it current and relevant for today’s students. Submit your suggestions to info@openstaxcollege.org, and check in on edition status, alternate versions, errata, and news on the StaxDash at http://openstaxcollege.org. 
+</para></section><section id="eip-326"><title>Cost</title><para id="eip-917">
+Our textbooks are available for free online, and in low-cost print and tablet editions.
+</para></section></section><section id="eip-394"><title>About <emphasis effect="italics">Human Anatomy and Physiology</emphasis></title><para id="eip-625">
+<emphasis effect="italics">Human Anatomy and Physiology</emphasis> is designed for the two-semester anatomy and physiology course taken by life science and allied health students. It supports effective teaching and learning, and prepares students for further learning and future careers. The text focuses on the most important concepts and aims to minimize distracting students with more minor details.   
+</para>
+
+<para id="eip-id1166207179754">The development choices for this textbook were made with the guidance of hundreds of faculty who are deeply involved in teaching this course. These choices led to innovations in art, terminology, career orientation, practical applications, and multimedia-based learning, all with a goal of increasing relevance to students. We strove to make the discipline meaningful and memorable to students, so that they can draw from it a working knowledge that will enrich their future studies. </para><section id="eip-29"><title>Coverage and Scope</title><para id="eip-369">The units of our <emphasis effect="italics">Human Anatomy and Physiology</emphasis> textbook adhere to the scope and sequence followed by most two-semester courses nationwide.  
+</para><section id="eip-217"><title>Unit 1: Levels of Organization </title><para id="eip-719">Chapters 1–4 provide students with a basic understanding of human anatomy and physiology, including its language, the levels of organization, and the basics of chemistry and cell biology.  These chapters provide a foundation for the further study of the body.  They also focus particularly on how the body’s regions, important chemicals, and cells maintain homeostasis.<newline/>     
+Chapter 1 An Introduction to the Human Body<newline/>
+Chapter 2 The Chemical Level of Organization<newline/>
+Chapter 3 The Cellular Level of Organization<newline/>
+Chapter 4 The Tissue Level of Organization<newline/>
+
+</para></section><section id="eip-146"><title>Unit 2: Support and Movement </title><para id="eip-760">In Chapters 5–11, students explore the skin, the largest organ of the body, and examine the body’s skeletal and muscular systems, following a traditional sequence of topics.  This unit is the first to walk students through specific systems of the body, and as it does so, it maintains a focus on homeostasis as well as those diseases and conditions that can disrupt it.<newline/>  
+Chapter 5 The Integumentary System<newline/>
+Chapter 6 Bone and Skeletal Tissue<newline/>
+Chapter 7 The Axial Skeleton<newline/>
+Chapter 8 The Appendicular Skeleton<newline/>
+Chapter 9 Joints<newline/>
+Chapter 10 Muscle Tissue<newline/>
+Chapter 11 The Muscular System<newline/>
+
+</para></section><section id="eip-114"><title>Unit 3: Regulation, Integration, and Control</title><para id="eip-595">Chapters 12–17 help students answer questions about nervous and endocrine system control and regulation. In a break with the traditional sequence of topics, the special senses are integrated into the chapter on the somatic nervous system. The chapter on the neurological examination offers students a unique approach to understanding nervous system function using five simple but powerful diagnostic tests. <newline/>
+Chapter 12 Introduction to the Nervous System<newline/>
+Chapter 13 The Anatomy of the Nervous System<newline/>
+Chapter 14 The Somatic Nervous System<newline/>
+Chapter 15 The Autonomic Nervous System<newline/>
+Chapter 16 The Neurological Exam<newline/>
+Chapter 17 The Endocrine System<newline/>
+
+</para></section><section id="eip-942"><title>Unit 5: Energy, Maintenance, and Environmental Exchange</title><para id="eip-965">In Chapters 22–26, students discover the interaction between body systems and the outside environment for the exchange of materials, the capture of energy, the release of waste, and the overall maintenance of the internal systems that regulate the exchange.  The explanations and illustrations are particularly focused on how structure relates to function.   <newline/>
+Chapter 22 The Respiratory System<newline/>
+Chapter 23 The Digestive System<newline/>
+Chapter 24 Nutrition and Metabolism<newline/>
+Chapter 25 The Urinary System<newline/>
+Chapter 26 Fluid, Electrolyte, and Acid–Base Balance<newline/>
+
+</para></section><section id="eip-314"><title>Unit 6: Human Development and the Continuity of Life</title><para id="eip-145">The closing chapters examine the male and female reproductive systems, describe the process of human development and the different stages of pregnancy, and end with a review of the mechanisms of inheritance. <newline/> 
+Chapter 27 The Reproductive System<newline/>
+Chapter 28 Development and Genetic Inheritance<newline/>
+
+</para></section></section><section id="eip-450"><title>Pedagogical Foundation and Features</title><para id="eip-191">
+<emphasis effect="italics">Human Anatomy and Physiology</emphasis> is designed to promote scientific literacy. Throughout the text, you will find features that engage the students by taking selected topics a step further. 
+</para><list id="eip-641"><item><emphasis>Homeostatic Imbalances</emphasis> discusses the effects and results of imbalances in the body.</item>
+<item><emphasis>Disorders</emphasis> showcases a disorder that is relevant to the body system at hand. This feature may focus on a specific disorder, or a set of related disorders.</item>
+<item><emphasis>Diseases</emphasis> showcases a disease that is relevant to the body system at hand.</item>
+<item><emphasis>Aging</emphasis> explores the effect aging has on a body’s system and specific disorders that manifest over time. </item>
+<item><emphasis>Career Connections</emphasis> presents information on the various careers often pursued by allied health students, such as medical technician, medical examiner, and neurophysiologist. Students are introduced to the educational requirements for and day-to-day responsibilities in these careers.</item>
+<item><emphasis>Everyday Connections</emphasis> tie anatomical and physiological concepts to emerging issues and discuss these in terms of everyday life. Topics include “Anabolic Steroids” and “The Effect of Second-Hand Tobacco Smoke.”</item>
+<item><emphasis>Interactive Links</emphasis> direct students to online exercises, simulations, animations, and videos to add a fuller context to core content and help improve understanding of the material. Many features include links to the University of Michigan’s interactive WebScopes, which allow students to zoom in on micrographs in the collection. These resources were vetted by reviewers and other subject matter experts to ensure that they are effective and accurate. We strongly urge students to explore these links, whether viewing a video or inputting data into a simulation, to gain the fullest experience and to learn how to search for information independently.  </item></list></section><section id="eip-72"><title>Dynamic, Learner-Centered Art</title><para id="eip-287">
+Our unique approach to visuals is designed to emphasize only the components most important in any given illustration. The art style is particularly aimed at focusing student learning through a powerful blend of traditional depictions and instructional innovations.  
+</para>
+<para id="eip-id1167703115240">Much of the art in this book consists of black line illustrations. The strongest line is used to highlight the most important structures, and shading is used to show dimension and shape. Color is used sparingly to highlight and clarify the primary anatomical or functional point of the illustration. This technique is intended to draw students’ attention to the critical learning point in the illustration, without distraction from excessive gradients, shadows, and highlights. Full color is used when the structure or process requires it (for example, muscle diagrams and cardiovascular system illustrations).
+<figure id="eip-id1169396666468"><title>The Pharynx</title><media id="preface" alt="A color illustration of the pharynx.">
+	   
+  <image mime-type="image/png" src="Preface.png" width="300"/>
+</media><caption>By highlighting the most important portions of the illustration, the artwork helps students focus on the most important points, without overwhelming them.  </caption></figure></para><section id="eip-817"><title>Micrographs</title><para id="eip-564">
+Micrograph magnifications have been calculated based on the objective provided with the image. If a micrograph was recorded at 40×, and the image was magnified an additional 2×, we calculated the final magnification of the micrograph to be 80×.
+</para>
+<para id="eip-id1166209684031">Please note that, when viewing the textbook electronically, the micrograph magnification provided in the text does not take into account the size and magnification of the screen on your electronic device. There may be some variation.
+<figure id="eip-id1164925497177"><title>Sebaceous Glands</title><media id="preface2" alt="A color illustration of the pharynx.">
+	   
+  <image mime-type="image/png" src="Preface2.png" width="500"/>
+</media><caption>These glands secrete oils that lubricate and protect the skin. LM × 400. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)</caption></figure></para></section><section id="eip-921"><title>Learning Resources</title><para id="eip-349">
+The following resources are (or will be) available in addition to main text:
+</para><list id="eip-57"><item>PowerPoint slides: For each chapter, the illustrations are presented, one per slide, with their respective captions. </item>
+<item>Pronunciation guide: A subset of the text’s key terms are presented with easy-to-follow phonetic transcriptions.  For example, blastocyst is rendered as “blas'to-sist”</item></list></section></section></section><section id="eip-228"><title>About Our Team</title><section id="eip-396"><title>Senior Contributors</title><table id="eip-124" summary="List of senior contributors" frame="none" colsep="0" rowsep="0"><label/>
+<tgroup cols="2"><tbody>
+  <row>
+    <entry>J. Gordon Betts</entry>
+    <entry>Tyler Junior College</entry>
+  </row>
+  <row>
+    <entry>Peter Desaix</entry>
+    <entry>University of North Carolina at Chapel Hill</entry>
+  </row>
+  <row>
+    <entry>Eddie Johnson</entry>
+    <entry>Central Oregon Community College</entry>
+  </row>
+<row>
+    <entry>Jody E. Johnson </entry>
+    <entry>Arapahoe Community College</entry>
+  </row>
+<row>
+    <entry>Oksana Korol</entry>
+    <entry>Aims Community College</entry>
+  </row>
+<row>
+    <entry>Dean Kruse</entry>
+    <entry>Portland Community College</entry>
+  </row>
+<row>
+    <entry>Brandon Poe</entry>
+    <entry>Springfield Technical Community College</entry>
+  </row>
+<row>
+    <entry>James A. Wise</entry>
+    <entry>Hampton University</entry>
+  </row>
+<row>
+    <entry>Mark Womble</entry>
+    <entry>Youngstown State University</entry>
+  </row>
+<row>
+    <entry>Kelly A. Young</entry>
+    <entry>California State University, Long Beach</entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table></section><section id="eip-683"><title>Advisor</title><para id="eip-195">
+Robin J. Heyden
+</para></section><section id="eip-11"><title>Other Contributors</title><table id="eip-237" summary="other contributors" frame="none" colsep="0" rowsep="0"><label/>
+<tgroup cols="2"><tbody>
+ <row>
+    <entry>Kim Aaronson</entry>
+    <entry>Aquarius Institute; Triton College</entry>
+  </row>
+  <row>
+    <entry>Lopamudra Agarwal</entry>
+    <entry>Augusta Technical College</entry>
+  </row>
+  <row>
+    <entry>Gary Allen</entry>
+    <entry>Dalhousie University</entry>
+  </row>
+  <row>
+    <entry>Robert Allison</entry>
+    <entry>McLennan Community College</entry>
+  </row>
+  <row>
+    <entry>Heather Armbruster</entry>
+    <entry>Southern Union State Community College</entry>
+  </row>
+  <row>
+    <entry>Timothy Ballard</entry>
+    <entry>University of North Carolina Wilmington</entry>
+  </row>
+  <row>
+    <entry>Matthew Barlow</entry>
+    <entry>Eastern New Mexico University</entry>
+  </row>
+  <row>
+    <entry>William Blaker</entry>
+    <entry>Furman University</entry>
+  </row>  
+<row>
+    <entry>Julie Bowers</entry>
+    <entry>East Tennessee State University</entry>
+  </row> 
+<row>
+    <entry>Emily Bradshaw</entry>
+    <entry>Florida Southern College</entry>
+</row>  
+<row>
+    <entry>Nishi Bryska</entry>
+    <entry>University of North Carolina, Charlotte</entry>
+</row>
+<row>
+    <entry>Susan Caley Opsal</entry>
+    <entry>Illinois Valley Community College</entry>
+</row>
+<row>
+    <entry>Boyd Campbell</entry>
+    <entry>Southwest College of Naturopathic Medicine and Health Sciences</entry>
+</row>
+<row>
+<entry>Ann Caplea</entry>
+    <entry>Walsh University</entry>
+</row>
+<row>
+    <entry>Marnie Chapman</entry>
+    <entry>University of Alaska, Sitka</entry>
+</row>
+  <row>
+    <entry>Barbara Christie-Pope</entry>
+    <entry>Cornell College</entry>
+  </row>
+  <row>
+    <entry>Kenneth Crane</entry>
+    <entry>Texarkana College</entry>
+  </row>
+  <row>
+    <entry>Maurice Culver</entry>
+    <entry>Florida State College at Jacksonville</entry>
+  </row>
+  <row>
+    <entry>Heather Cushman</entry>
+    <entry>Tacoma Community College</entry>
+  </row>
+  <row>
+    <entry>Noelle Cutter</entry>
+    <entry>Molloy College</entry>
+  </row>
+  <row>
+    <entry>Lynnette Danzl-Tauer</entry>
+    <entry>Rock Valley College</entry>
+  </row>
+  <row>
+    <entry>Jane Davis</entry>
+    <entry>Aurora University</entry>
+  </row>
+  <row>
+    <entry>AnnMarie DelliPizzi</entry>
+    <entry>Dominican College</entry>
+  </row>
+  <row>
+    <entry>Susan Dentel</entry>
+    <entry>Washtenaw Community College</entry>
+  </row>
+  <row>
+    <entry>Pamela Dobbins</entry>
+    <entry>Shelton State Community College</entry>
+  </row>
+  <row>
+    <entry>Patty Dolan</entry>
+    <entry>Pacific Lutheran University</entry>
+  </row>
+  <row>
+    <entry>Sondra Dubowsky</entry>
+    <entry>McLennan Community College</entry>
+  </row>
+  <row>
+    <entry>Peter Dukehart</entry>
+    <entry>Three Rivers Community College</entry>
+  </row>
+  <row>
+    <entry>Ellen DuPré</entry>
+    <entry>Central College</entry>
+  </row>
+  <row>
+    <entry>Elizabeth DuPriest</entry>
+    <entry>Warner Pacific College</entry>
+  </row>
+  <row>
+    <entry>Pam Elf</entry>
+    <entry>University of Minnesota</entry>
+  </row>
+  <row>
+    <entry>Sharon Ellerton </entry>
+    <entry>Queensborough Community College</entry>
+  </row>
+  <row>
+    <entry>Carla Endres</entry>
+    <entry>Utah State University - College of Eastern Utah: San Juan Campus</entry>
+  </row>
+  <row>
+    <entry>Myriam Feldman</entry>
+    <entry>Lake Washington Institute of Technology; Cascadia Community College</entry>
+  </row>
+  <row>
+    <entry>Greg Fitch</entry>
+    <entry>Avila University </entry>
+  </row>
+  <row>
+    <entry>Lynn Gargan</entry>
+    <entry>Tarant County College</entry>
+  </row>
+  <row>
+    <entry>Michael Giangrande</entry>
+    <entry>Oakland Community College</entry>
+  </row>
+  <row>
+    <entry>Chaya Gopalan</entry>
+    <entry>St. Louis College of Pharmacy</entry>
+  </row>
+  <row>
+    <entry>Victor Greco</entry>
+    <entry>Chattahoochee Technical College</entry>
+  </row>
+  <row>
+    <entry>Susanna Heinze</entry>
+    <entry>Skagit Valley College</entry>
+  </row>
+  <row>
+    <entry>Ann Henninger</entry>
+    <entry>Wartburg College</entry>
+  </row>
+  <row>
+    <entry>Dale Horeth</entry>
+    <entry>Tidewater Community College</entry>
+  </row>
+  <row>
+    <entry>Michael Hortsch</entry>
+    <entry>University of Michigan</entry>
+  </row>
+  <row>
+    <entry>Rosemary Hubbard</entry>
+    <entry>Marymount University</entry>
+  </row>
+  <row>
+    <entry>Mark Hubley</entry>
+    <entry>Prince George's Community College</entry>
+  </row>
+  <row>
+    <entry>Branko Jablanovic</entry>
+    <entry>College of Lake County</entry>
+  </row>
+  <row>
+    <entry>Norman Johnson </entry>
+    <entry>University of Massachusetts Amherst</entry>
+  </row>
+  <row>
+    <entry>Mark Jonasson</entry>
+    <entry>North Arkansas College</entry>
+  </row>
+  <row>
+    <entry>Jeff Keyte </entry>
+    <entry>College of Saint Mary</entry>
+  </row>
+  <row>
+    <entry>William Kleinelp</entry>
+    <entry>Middlesex County College</entry>
+  </row>
+  <row>
+    <entry>Leigh Kleinert</entry>
+    <entry>Grand Rapids Community College </entry>
+  </row>
+
+  <row>
+    <entry>Brenda Leady</entry>
+    <entry>University of Toledo</entry>
+  </row>
+  <row>
+    <entry>John Lepri</entry>
+    <entry>University of North Carolina, Greensboro</entry>
+  </row>
+  <row>
+    <entry>Sarah Leupen</entry>
+    <entry>University of Maryland, Baltimore County</entry>
+  </row>
+  <row>
+    <entry>Lihua Liang</entry>
+    <entry>Johns Hopkins University</entry>
+  </row>
+
+  <row>
+    <entry>Robert Mallet</entry>
+    <entry>University of North Texas Health Science Center</entry>
+  </row>
+  <row>
+    <entry>Bruce Maring</entry>
+    <entry>Daytona State College</entry>
+  </row>
+  <row>
+    <entry>Elisabeth Martin</entry>
+    <entry>College of Lake County</entry>
+  </row>
+  <row>
+    <entry>Natalie Maxwell</entry>
+    <entry>Carl Albert State College, Sallisaw </entry>
+  </row>
+
+  <row>
+    <entry>Julie May</entry>
+    <entry>William Carey University</entry>
+  </row>
+  <row>
+    <entry>Debra McLaughlin</entry>
+    <entry>University of Maryland University College</entry>
+  </row>
+  <row>
+    <entry>Nicholas Mitchell</entry>
+    <entry>St. Bonaventure University</entry>
+  </row>
+  <row>
+    <entry>Phillip Nicotera</entry>
+    <entry>St. Petersburg College</entry>
+  </row>
+
+  <row>
+    <entry>Mary Jane Niles</entry>
+    <entry>University of San Francisco</entry>
+  </row>
+  <row>
+    <entry>Ikemefuna Nwosu</entry>
+    <entry>Parkland College; Lake Land College</entry>
+  </row>
+  <row>
+    <entry>Betsy Ott</entry>
+    <entry>Tyler Junior College</entry>
+  </row>
+  <row>
+    <entry>Ivan Paul</entry>
+    <entry>John Wood Community College</entry>
+  </row>
+
+  <row>
+    <entry>Aaron Payette</entry>
+    <entry>College of Southern Nevada</entry>
+  </row>
+  <row>
+    <entry>Scott Payne</entry>
+    <entry>Kentucky Wesleyan College</entry>
+  </row>
+  <row>
+    <entry>Cameron Perkins</entry>
+    <entry>South Georgia College</entry>
+  </row>
+  <row>
+    <entry>David Pfeiffer</entry>
+    <entry>University of Alaska, Anchorage</entry>
+  </row>
+  <row>
+    <entry>Thomas Pilat</entry>
+    <entry>Illinois Central College</entry>
+  </row>
+  <row>
+    <entry>Eileen Preston</entry>
+    <entry>Tarrant County College</entry>
+  </row>
+  <row>
+    <entry>Mike Pyle</entry>
+    <entry>Olivet Nazarene University</entry>
+  </row>
+  <row>
+    <entry>Robert Rawding</entry>
+    <entry>Gannon University</entry>
+  </row>
+  <row>
+    <entry>Jason Schreer</entry>
+    <entry>State University of New York at Potsdam</entry>
+  </row>
+  <row>
+    <entry>Laird Sheldahl</entry>
+    <entry>Mt. Hood Community College</entry>
+  </row>
+  <row>
+    <entry>Brian Shmaefsky</entry>
+    <entry>Lone Star College System</entry>
+  </row>
+  <row>
+    <entry>Douglas Sizemore</entry>
+    <entry>Bevill State Community College</entry>
+  </row>
+  <row>
+    <entry>Susan Spencer</entry>
+    <entry>Mount Hood Community College</entry>
+  </row>
+  <row>
+    <entry>Cynthia Standley</entry>
+    <entry>University of Arizona</entry>
+  </row>
+  <row>
+    <entry>Robert Sullivan</entry>
+    <entry>Marist College</entry>
+  </row>
+  <row>
+    <entry>Eric Sun</entry>
+    <entry>Middle Georgia State College</entry>
+  </row>
+  <row>
+    <entry>Tom Swenson</entry>
+    <entry>Ithaca College</entry>
+  </row>
+  <row>
+    <entry>Kathleen Tallman</entry>
+    <entry>Azusa Pacific University</entry>
+  </row>
+  <row>
+    <entry>Rohinton Tarapore</entry>
+    <entry>University of Pennsylvania</entry>
+  </row>
+  <row>
+    <entry>Elizabeth Tattersall</entry>
+    <entry>Western Nevada College</entry>
+  </row>
+  <row>
+    <entry>Mark Thomas</entry>
+    <entry>University of Northern Colorado</entry>
+  </row>
+  <row>
+    <entry>Janis Thompson</entry>
+    <entry>Lorain County Community College</entry>
+  </row>
+  <row>
+    <entry>Rita Thrasher</entry>
+    <entry>Pensacola State College</entry>
+  </row>
+  <row>
+    <entry>David Van Wylen</entry>
+    <entry>St. Olaf College</entry>
+  </row>
+  <row>
+    <entry>Lynn Wandrey</entry>
+    <entry>Mott Community College</entry>
+  </row>
+  <row>
+    <entry>Margaret Weck</entry>
+    <entry>St. Louis College of Pharmacy</entry>
+  </row>
+  <row>
+    <entry>Kathleen Weiss</entry>
+    <entry>George Fox University</entry>
+  </row>
+  <row>
+    <entry>Neil Westergaard</entry>
+    <entry>Williston State College</entry>
+  </row>
+  <row>
+    <entry>David Wortham</entry>
+    <entry>West Georgia Technical College</entry>
+  </row>
+  <row>
+    <entry>Umesh Yadav </entry>
+    <entry>University of Texas Medical Branch</entry>
+  </row>
+  <row>
+    <entry>Tony Yates</entry>
+    <entry>Oklahoma Baptist University</entry>
+  </row>
+  <row>
+    <entry>Justin York</entry>
+    <entry>Glendale Community College</entry>
+  </row>
+  <row>
+    <entry>Cheri Zao</entry>
+    <entry>North Idaho College</entry>
+  </row>
+  <row>
+    <entry>Elena Zoubina</entry>
+    <entry>Bridgewater State University; Massasoit Community College</entry>
+  </row>
+
+</tbody>
+
+
+
+
+
+</tgroup>
+</table></section></section><section id="eip-321"><title>Special Thanks</title><para id="eip-980">
+OpenStax College wishes to thank the Regents of University of Michigan Medical School for the use of their extensive micrograph collection. Many of the UM micrographs that appear in <emphasis effect="italics">Human Anatomy and Physiology</emphasis> are interactive WebScopes, which students can explore by zooming in and out.
+
+
+</para>
+<para id="eip-id1164912162747">We also wish to thank the Open Learning Initiative at Carnegie Mellon University, with whom we shared and exchanged resources during the development of <emphasis effect="italics">Human Anatomy and Physiology</emphasis>.</para></section></content>
+
+</document>
