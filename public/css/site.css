@@ -1,3 +1,4 @@
+@import 'gitbook.css';
 #sidebar-checkbox:checked ~ .wrap .container {
   margin-left: 5rem;
 }
@@ -28,34 +29,73 @@
 .list-entry li {
   list-style-type: none;
 }
-.sidebar > ol {
-  counter-reset: chapter;
+.header-link {
+  position: absolute;
+  left: -1em;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out 0.1s;
+  -moz-transition: opacity 0.2s ease-in-out 0.1s;
+  -ms-transition: opacity 0.2s ease-in-out 0.1s;
 }
-.sidebar ol {
+h1:hover .header-link,
+h2:hover .header-link,
+h3:hover .header-link,
+h4:hover .header-link,
+h5:hover .header-link,
+h6:hover .header-link {
+  opacity: 1;
+  color: black !important;
+}
+.summary {
+  counter-reset: chapter;
+  background-color: #efefef;
+}
+.summary li.part {
+  font-size: 130%;
+}
+.summary li.part > ol {
+  font-size: 70%;
+}
+.summary ol {
   padding: 0;
 }
-.sidebar ol li {
+.summary ol a {
+  display: inline !important;
+  padding: 0;
+}
+.summary ol li {
+  padding: 10px 0px;
   list-style-type: none;
   /* Add ellipses if the title is long */
   white-space: nowrap;
   overflow-x: hidden;
   text-overflow: ellipsis;
 }
-.sidebar ol li::before {
+.summary ol li::before {
   font-weight: bold;
 }
-.sidebar ol li.chapter {
+.summary ol li.chapter {
   counter-increment: chapter;
   counter-reset: section;
 }
-.sidebar ol li.chapter::before {
+.summary ol li.chapter::before {
   content: counter(chapter) '. ';
+  color: black;
+  font-weight: bold;
+  font-size: 120%;
+  padding-left: 1em;
 }
-.sidebar ol li.chapter > ol > li {
+.summary ol li.chapter > a {
+  font-size: 120%;
+}
+.summary ol li.chapter > ol > li {
   counter-increment: section;
 }
-.sidebar ol li.chapter > ol > li::before {
+.summary ol li.chapter > ol > li::before {
   content: counter(chapter) '.' counter(section) ' ';
+  color: black;
+  font-weight: bold;
+  padding-left: 2em;
 }
 .page {
   counter-reset: figure;
