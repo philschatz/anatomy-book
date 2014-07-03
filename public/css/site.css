@@ -1,0 +1,25 @@
+#sidebar-checkbox:checked ~ .wrap .container {
+  margin-left: 5rem;
+}
+
+#sidebar .comment { color: rgba(255,255,255,.6); }
+
+#sidebar .comment:hover  { text-decoration: none; }
+#sidebar .comment:before { content: '('; }
+#sidebar .comment:after  { content: ')'; }
+
+
+/* When the URL refers to in-page elements make them stand out a bit */
+:target { background-color: #ffd; }
+
+
+/* styles for tags page */
+.inline-list li {
+  list-style-type: none;
+  display: inline-block;
+}
+.inline-list li:not(:last-child):after { content: ', ';}
+
+.list-entry li {
+  list-style-type: none;
+}

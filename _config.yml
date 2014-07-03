@@ -1,0 +1,27 @@
+# Dependencies
+markdown:         kramdown
+pygments:         true
+
+redcarpet:
+  extensions:     ['no_intra_emphasis', 'fenced_code_blocks', 'autolink', 'tables', 'with_toc_data']
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            "Phil's Musings"
+tagline:          'notes from a peripatetic programmer'
+description:      'Projects I tinker with and lessons learned making beautiful, <a href="http://cnx.org" target="_window">free textbooks for the world</a>'
+url:              http://philschatz.com
+
+author:
+  name:           'Philip Schatz'
+  url:            https://github.com/philschatz
+
+paginate:         5
+
+# Custom vars
+version:          1.0.0
+
+github:
+  repo:           https://github.com/philschatz/philschatz.github.com
