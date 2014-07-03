@@ -85,7 +85,7 @@ layout: page
         7. [Exercise and Muscle Performance](../m46438)
         8. [Cardiac Muscle Tissue](../m46404)
         9. [Smooth Muscle](../m46478)
-        10.[Development and Regeneration of Muscle Tissue](../m46407)
+        10. [Development and Regeneration of Muscle Tissue](../m46407)
 
     7.  {: .chapter} [The Muscular System](../m46492)
         2. [Interactions of Skeletal Muscles, Their Fascicle Arrangement, and Their Lever Systems](../m46487)
@@ -136,9 +136,9 @@ layout: page
         7. [The Adrenal Glands](../m46684)
         8. [The Pineal Gland](../m46693)
         9. [Gonadal and Placental Hormones](../m46670)
-        10.[The Endocrine Pancreas](../m46685)
-        11.[Organs with Secondary Endocrine Functions](../m46680)
-        12.[Development and Aging of the Endocrine System](../m46658)
+        10. [The Endocrine Pancreas](../m46685)
+        11. [Organs with Secondary Endocrine Functions](../m46680)
+        12. [Development and Aging of the Endocrine System](../m46658)
 
 5.  {: .part} Unit 4: Fluids and Transport
     1.  {: .chapter} [The Cardiovascular System: Blood](../m46703)
@@ -210,8 +210,8 @@ layout: page
         7. [Tubular Reabsorption](../m46443)
         8. [Regulation of Renal Blood Flow](../m46435)
         9. [Endocrine Regulation of Kidney Function](../m46424)
-        10.[Regulation of Fluid Volume and Composition](../m46434)
-        11.[The Urinary System and Homeostasis](../m46446)
+        10. [Regulation of Fluid Volume and Composition](../m46434)
+        11. [The Urinary System and Homeostasis](../m46446)
 
     5.  {: .chapter} [Fluid, Electrolyte, and Ac (PHIL) Balance](../m46415)
         2. [Body Fluids and Fluid Compartments](../m46411)
