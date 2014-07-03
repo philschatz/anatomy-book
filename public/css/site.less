@@ -25,27 +25,36 @@
 }
 
 
-.sidebar > ol { counter-reset: chapter; }
-.sidebar ol { padding: 0; }
-.sidebar ol li {
-  list-style-type: none;
-  /* Add ellipses if the title is long */
-  white-space: nowrap;
-  overflow-x: hidden;
-  text-overflow: ellipsis;
-}
+.sidebar {
+  > ol { counter-reset: chapter; }
+  ol {
+    padding: 0;
 
-.sidebar ol li::before {
-  font-weight: bold;
-}
+    li {
+      list-style-type: none;
+      /* Add ellipses if the title is long */
+      white-space: nowrap;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
 
-.sidebar ol li.chapter {
-  counter-increment: chapter;
-  counter-reset: section;
+      &::before {
+        font-weight: bold;
+      }
+
+      &.chapter {
+        counter-increment: chapter;
+        counter-reset: section;
+
+        &::before { content: counter(chapter) '. '; }
+
+        > ol > li {
+          counter-increment: section;
+          &::before { content: counter(chapter) '.' counter(section) ' '; }
+        }
+      }
+    }
+  }
 }
-.sidebar ol li.chapter::before { content: counter(chapter) '. '; }
-.sidebar ol li.chapter > ol > li { counter-increment: section; }
-.sidebar ol li.chapter > ol > li::before { content: counter(chapter) '.' counter(section) ' '; }
 
 
 .page { counter-reset: figure; }

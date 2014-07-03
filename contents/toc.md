@@ -5,8 +5,7 @@ layout: page
 
 1.  {: .preface} [Preface](../m46844)
 2.  {: .part} Unit 1: Levels of Organization
-    1.  {: .chapter} An Introduction to the Human Body
-        1. [Introduction](../m45981)
+    1.  {: .chapter} [An Introduction to the Human Body](../m45981)
         2. [Overview of Anatomy and Physiology](../m45983)
         3. [Structural Organization of the Human Body](../m45985)
         4. [Functions of Human Life](../m45986)
@@ -15,16 +14,14 @@ layout: page
         7. [Anatomical Terminology](../m45990)
         8. [Medical Imaging](../m45991)
 
-    2.  {: .chapter} The Chemical Level of Organization
-        1. [Introduction](../m45996)
+    2.  {: .chapter} [The Chemical Level of Organization](../m45996)
         2. [Elements and Atoms: The Building Blocks of Matter](../m45998)
         3. [Chemical Bonds](../m46000)
         4. [Chemical Reactions](../m46004)
         5. [Inorganic Compounds Essential to Human Functioning](../m46006)
         6. [Organic Compounds Essential to Human Functioning](../m46008)
 
-    3.  {: .chapter} The Cellular Level of Organization
-        1. [Introduction](../m46016)
+    3.  {: .chapter} [The Cellular Level of Organization](../m46016)
         2. [The Cell Membrane](../m46021)
         3. [The Cytoplasm and Cellular Organelles](../m46023)
         4. [The Nucleus and DNA Replication](../m46073)
@@ -32,8 +29,7 @@ layout: page
         6. [Cell Growth and Division](../m46034)
         7. [Cellular Differentiation](../m46036)
 
-    4.  {: .chapter} The Tissue Level of Organization
-        1. [Introduction](../m46045)
+    4.  {: .chapter} [The Tissue Level of Organization](../m46045)
         2. [Types of Tissues](../m46046)
         3. [Epithelial Tissue](../m46048)
         4. [Connective Tissue Supports and Protects](../m46049)
@@ -42,15 +38,13 @@ layout: page
         7. [Tissue Injury and Aging](../m46058)
 
 3.  {: .part} Unit 2: Support and Movement
-    1.  {: .chapter} The Integumentary System
-        1. [Introduction](../m46059)
+    1.  {: .chapter} [The Integumentary System](../m46059)
         2. [Layers of the Skin](../m46060)
         3. [Accessory Structures of the Skin](../m46062)
         4. [Functions of the Integumentary System](../m46064)
         5. [Diseases, Disorders, and Injuries of the Integumentary System](../.md.xh)
 
-    2.  {: .chapter} Bone Tissue and the Skeletal System
-        1. [Introduction](../m46290)
+    2.  {: .chapter} [Bone Tissue and the Skeletal System](../m46290)
         2. [The Functions of the Skeletal System](../m46341)
         3. [Bone Classification](../m46282)
         4. [Bone Structure](../m46281)
@@ -59,24 +53,21 @@ layout: page
         7. [Exercise, Nutrition, Hormones, and Bone Tissue](../m46305)
         8. [Calcium Homeostasis: Interactions of the Skeletal System and Other Organ Systems](../m46295)
 
-    3.  {: .chapter} Axial Skeleton
-        1. [Introduction](../m46347)
+    3.  {: .chapter} [Axial Skeleton](../m46347)
         2. [Divisions of the Skeletal System](../m46344)
         3. [The Skull](../m46355)
         4. [The Vertebral Column](../m46352)
         5. [The Thoracic Cage](../m46350)
         6. [Embryonic Development of the Axial Skeleton](../m46348)
 
-    4.  {: .chapter} The Appendicular Skeleton
-        1. [Introduction](../m46370)
+    4.  {: .chapter} [The Appendicular Skeleton](../m46370)
         2. [The Pectoral Girdle](../m46374)
         3. [Bones of the Upper Limb](../m46368)
         4. [The Pelvic Girdle and Pelvis](../m46375)
         5. [Bones of the Lower Limb](../m46364)
         6. [Development of the Appendicular Skeleton](../m46376)
 
-    5.  {: .chapter} Joints
-        1. [Introduction](../m46402)
+    5.  {: .chapter} [Joints](../m46402)
         2. [Classification of Joints](../m46383)
         3. [Fibrous Joints](../m46403)
         4. [Cartilaginous Joints](../m46381)
@@ -85,8 +76,7 @@ layout: page
         7. [Anatomy of Selected Synovial Joints](../m46377)
         8. [Development of Joints](../m46388)
 
-    6.  {: .chapter} Muscle Tissue
-        1. [Introduction](../m46450)
+    6.  {: .chapter} [Muscle Tissue](../m46450)
         2. [Overview of Muscle Tissues](../m46473)
         3. [Skeletal Muscle](../m46476)
         4. [Muscle Fiber Contraction and Relaxation](../m46447)
@@ -97,8 +87,7 @@ layout: page
         9. [Smooth Muscle](../m46478)
         10.[Development and Regeneration of Muscle Tissue](../m46407)
 
-    7.  {: .chapter} The Muscular System
-        1. [Introduction](../m46492)
+    7.  {: .chapter} [The Muscular System](../m46492)
         2. [Interactions of Skeletal Muscles, Their Fascicle Arrangement, and Their Lever Systems](../m46487)
         3. [Naming Skeletal Muscles](../m46498)
         4. [Axial Muscles of the Head, Neck, and Back](../m46484)
@@ -107,44 +96,38 @@ layout: page
         7. [Appendicular Muscles of the Pelvic Girdle and Lower Limbs](../m46482)
 
 4.  {: .part} Unit 3: Regulation, Integrati (PHIL) Control
-    1.  {: .chapter} The Nervous System and Nervous Tissue
-        1. [Introduction](../m46504)
+    1.  {: .chapter} [The Nervous System and Nervous Tissue](../m46504)
         2. [Basic Structure and Function of the Nervous System](../m46500)
         3. [Nervous Tissue](../m46509)
         4. [The Function of Nervous Tissue](../m46531)
         5. [The Action Potential](../m46526)
         6. [Communication Between Neurons](../m46503)
 
-    2.  {: .chapter} Anatomy of the Nervous System
-        1. [Introduction](../m46528)
+    2.  {: .chapter} [Anatomy of the Nervous System](../m46528)
         2. [The Embryologic Perspective](../m46535)
         3. [The Central Nervous System](../m46533)
         4. [Circulation and the Central Nervous System](../m46719)
         5. [The Peripheral Nervous System](../m46553)
 
-    3.  {: .chapter} The Brain and Cranial Nerves
-        1. [Introduction](../m46561)
+    3.  {: .chapter} [The Brain and Cranial Nerves](../m46561)
         2. [Sensory Perception](../m46577)
         3. [Central Processing](../m46557)
         4. [Motor Responses](../m46574)
 
-    4.  {: .chapter} The Autonomic Nervous System
-        1. [Introduction](../m46590)
+    4.  {: .chapter} [The Autonomic Nervous System](../m46590)
         2. [Divisions of the Autonomic Nervous System](../m46582)
         3. [Autonomic Reflexes and Homeostasis](../m46579)
         4. [Central Control](../m46581)
         5. [Drugs that Affect the Autonomic System](../m46587)
 
-    5.  {: .chapter} The Neurological Exam
-        1. [Introduction](../m46593)
+    5.  {: .chapter} [The Neurological Exam](../m46593)
         2. [Overview of the Neurological Exam](../m46594)
         3. [The Mental Status Exam](../m46650)
         4. [The Cranial Nerve Exam](../m46607)
         5. [The Sensory and Motor Exams](../m46640)
         6. [The Coordination and Gait Exams](../m46604)
 
-    6.  {: .chapter} The Endocrine System
-        1. [Introduction](../m46682)
+    6.  {: .chapter} [The Endocrine System](../m46682)
         2. [An Overview of the Endocrine System](../m46656)
         3. [Hormones](../m46667)
         4. [The Pituitary Gland and Hypothalamus](../m46699)
@@ -158,8 +141,7 @@ layout: page
         12.[Development and Aging of the Endocrine System](../m46658)
 
 5.  {: .part} Unit 4: Fluids and Transport
-    1.  {: .chapter} The Cardiovascular System: Blood
-        1. [Introduction](../m46703)
+    1.  {: .chapter} [The Cardiovascular System: Blood](../m46703)
         2. [An Overview of Blood](../m46710)
         3. [Production of the Formed Elements](../m46691)
         4. [Erythrocytes](../m46707)
@@ -167,16 +149,14 @@ layout: page
         6. [Hemostasis](../m46705)
         7. [Blood Typing](../m46708)
 
-    2.  {: .chapter} The Cardiovascular System: The Heart
-        1. [Introduction](../m46679)
+    2.  {: .chapter} [The Cardiovascular System: The Heart](../m46679)
         2. [Heart Anatomy](../m46676)
         3. [Cardiac Muscle and Electrical Activity](../m46664)
         4. [Cardiac Cycle](../m46661)
         5. [Cardiac Physiology](../m46672)
         6. [Development of the Heart](../m46673)
 
-    3.  {: .chapter} The Cardiovascular System: Blood Vess (PHIL) Circulation
-        1. [Introduction](../m46600)
+    3.  {: .chapter} [The Cardiovascular System: Blood Vess (PHIL) Circulation](../m46600)
         2. [Structure and Function of Blood Vessels](../m46597)
         3. [Blood Flow, Blood Pressure, and Resistance](../m46635)
         4. [Capillary Exchange](../m46586)
@@ -184,8 +164,7 @@ layout: page
         6. [Circulatory Pathways](../m46646)
         7. [Development of Blood Vessels and Fetal Circulation](../m46610)
 
-    4.  {: .chapter} The Lymphatic and Immune System
-        1. [Introduction](../m46573)
+    4.  {: .chapter} [The Lymphatic and Immune System](../m46573)
         2. [Anatomy of the Lymphatic and Immune Systems](../m46563)
         3. [Barrier Defenses and the Innate Immune Response](../m46571)
         4. [The Adaptive Immune Response: T lymphocytes and Their Functional Types](../m46560)
@@ -195,8 +174,7 @@ layout: page
         8. [Transplantation and Cancer Immunology](../m46583)
 
 6.  {: .part} Unit 5: Energy, Maintenance, and Enviro (PHIL) Exchange
-    1.  {: .chapter} The Respiratory System
-        1. [Introduction](../m46523)
+    1.  {: .chapter} [The Respiratory System](../m46523)
         2. [Organs and Structures of the Respiratory System](../m46548)
         3. [The Lungs](../m46551)
         4. [The Process of Breathing](../m46549)
@@ -205,8 +183,7 @@ layout: page
         7. [Modifications in Respiratory Functions](../m46524)
         8. [Embryonic Development of the Respiratory System](../m46518)
 
-    2.  {: .chapter} The Digestive System
-        1. [Introduction](../m46505)
+    2.  {: .chapter} [The Digestive System](../m46505)
         2. [Overview of the Digestive System](../m46506)
         3. [Digestive System Processes and Regulation](../m46502)
         4. [The Mouth, Pharynx, and Esophagus](../m46511)
@@ -215,8 +192,7 @@ layout: page
         7. [Accessory Organs in Digestion: The Liver, Pancreas, and Gallbladder](../m46496)
         8. [Chemical Digestion and Absorption: A Closer Look](../m46501)
 
-    3.  {: .chapter} Metabolism and Nutrition
-        1. [Introduction](../m46458)
+    3.  {: .chapter} [Metabolism and Nutrition](../m46458)
         2. [Overview of Metabolic Reactions](../m46489)
         3. [Carbohydrate Metabolism](../m46451)
         4. [Lipid Metabolism](../m46462)
@@ -225,8 +201,7 @@ layout: page
         7. [Energy and Heat Balance](../m46456)
         8. [Nutrition and Diet](../m46467)
 
-    4.  {: .chapter} The Urinary System
-        1. [Introduction](../m46430)
+    4.  {: .chapter} [The Urinary System](../m46430)
         2. [Physical Characteristics of Urine](../m46432)
         3. [Gross Anatomy of Urine Transport](../m46427)
         4. [Gross Anatomy of the Kidney](../m46429)
@@ -238,8 +213,7 @@ layout: page
         10.[Regulation of Fluid Volume and Composition](../m46434)
         11.[The Urinary System and Homeostasis](../m46446)
 
-    5.  {: .chapter} Fluid, Electrolyte, and Ac (PHIL) Balance
-        1. [Introduction](../m46415)
+    5.  {: .chapter} [Fluid, Electrolyte, and Ac (PHIL) Balance](../m46415)
         2. [Body Fluids and Fluid Compartments](../m46411)
         3. [Water Balance](../m46416)
         4. [Electrolyte Balance](../m46414)
@@ -247,14 +221,12 @@ layout: page
         6. [Disorders of Acid-Base Balance](../m46413)
 
 7.  {: .part} Unit 6: Human Development and the Contin (PHIL) Life
-    1.  {: .chapter} The Reproductive System
-        1. [Introduction](../m46385)
+    1.  {: .chapter} [The Reproductive System](../m46385)
         2. [Anatomy and Physiology of the Male Reproductive System](../m46400)
         3. [Anatomy and Physiology of the Female Reproductive System](../m46392)
         4. [Development of the Male and Female Reproductive Systems](../m46408)
 
-    2.  {: .chapter} Development and Inheritance
-        1. [Introduction](../m46339)
+    2.  {: .chapter} [Development and Inheritance](../m46339)
         2. [Fertilization](../m46308)
         3. [Embryonic Development](../m46319)
         4. [Fetal Development](../m46316)
