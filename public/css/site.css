@@ -25,6 +25,7 @@
 }
 
 
+.sidebar > ol { counter-reset: chapter; }
 .sidebar ol { padding: 0; }
 .sidebar ol li {
   list-style-type: none;
