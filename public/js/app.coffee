@@ -34,6 +34,7 @@ BOOK_TEMPLATE = '''
 
     <div class="book-header">
       <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+      <h1><i class="fa fa-spinner fa-spin book-spinner"></i><span class="book-title"></span></h1>
     </div>
 
     <div class="book-summary">
@@ -70,6 +71,7 @@ $ () ->
   $bookSummary = $book.find('.book-summary')
   $bookBody = $book.find('.book-body')
   $bookPage = $book.find('.page-inner > .normal')
+  $bookTitle = $book.find('.book-title')
 
   $toggleSummary.on 'click', (evt) ->
     $book.toggleClass('with-summary')
@@ -77,6 +79,9 @@ $ () ->
 
   renderToc = ->
     $summary = $('<ul class="summary"></ul>')
+    if BookConfig.issuesUrl
+      $summary.append("<li class='issues'><a href='#{BookConfig.issuesUrl}'>Questions and Issues</a></li>")
+    $summary.append("<li class='edit-contribute'><a href='#{BookConfig.url}'>Edit and Contribute</a></li>")
     $summary.append('<li class="divider"/>')
     $summary.append(tocHelper.$toc.children('li'))
 
@@ -112,7 +117,7 @@ $ () ->
     _tocHref: null
     _tocList: []
     _tocTitles: {}
-    loadToc: (@_tocHref, @$toc, $title) ->
+    loadToc: (@_tocHref, @$toc, @$title) ->
       tocUrl = URI(BookConfig.toc.url).absoluteTo(removeTrailingSlash(window.location.href))
 
       @_tocTitles = {}
@@ -151,11 +156,13 @@ $ () ->
     $title = $root.children('title').contents()
     $toc = $root.find(BookConfig.toc.selector).first()
     tocHelper.loadToc(BookConfig.toc.url, $toc, $title)
+    $bookTitle.html(tocHelper.$title)
 
 
   $bookPage.append($originalPage)
 
   changePage = (href) ->
+    $book.addClass('loading')
     $.ajax(url: href, accept: 'text/html')
     .then (html) ->
       $html = $("<div>#{html}</div>")
@@ -163,6 +170,7 @@ $ () ->
 
       $bookPage.contents().remove()
       $bookPage.append($html) # TODO: Strip out title and meta tags
+      $book.removeClass('loading')
 
   # Listen to clicks and handle them without causing a page reload
   $('body').on 'click', 'a[href]:not([href^="#"])', (evt) ->

@@ -1,4 +1,10 @@
 @import 'gitbook.css';
+.book.loading .book-title {
+  display: none;
+}
+.book:not(.loading) .book-spinner {
+  display: none;
+}
 #sidebar-checkbox:checked ~ .wrap .container {
   margin-left: 5rem;
 }

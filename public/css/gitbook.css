@@ -5822,9 +5822,6 @@ td.visible-print {
     display: none;
   }
 }
-.book .book-header h1 i {
-  display: none;
-}
 .book.is-loading .book-header h1 i {
   display: inline-block;
 }

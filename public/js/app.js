@@ -53,10 +53,10 @@
     document.head.appendChild(fa);
   }
 
-  BOOK_TEMPLATE = '<div class="book without-animation with-summary font-size-2 font-family-1">\n\n  <div class="book-header">\n    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>\n  </div>\n\n  <div class="book-summary">\n  </div>\n\n  <div class="book-body">\n    <div class="body-inner">\n      <div class="page-wrapper" tabindex="-1">\n        <div class="book-progress">\n        </div>\n        <div class="page-inner">\n          <section class="normal">\n            <!-- content -->\n          </section>\n        </div>\n      </div>\n    </div>\n  </div>\n\n</div>';
+  BOOK_TEMPLATE = '<div class="book without-animation with-summary font-size-2 font-family-1">\n\n  <div class="book-header">\n    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>\n    <h1><i class="fa fa-spinner fa-spin book-spinner"></i><span class="book-title"></span></h1>\n  </div>\n\n  <div class="book-summary">\n  </div>\n\n  <div class="book-body">\n    <div class="body-inner">\n      <div class="page-wrapper" tabindex="-1">\n        <div class="book-progress">\n        </div>\n        <div class="page-inner">\n          <section class="normal">\n            <!-- content -->\n          </section>\n        </div>\n      </div>\n    </div>\n  </div>\n\n</div>';
 
   $(function() {
-    var $body, $book, $bookBody, $bookPage, $bookSummary, $originalPage, $toggleSummary, TocHelper, addTrailingSlash, changePage, removeTrailingSlash, renderNextPrev, renderToc, tocHelper;
+    var $body, $book, $bookBody, $bookPage, $bookSummary, $bookTitle, $originalPage, $toggleSummary, TocHelper, addTrailingSlash, changePage, removeTrailingSlash, renderNextPrev, renderToc, tocHelper;
     $body = $('body');
     $originalPage = $body.contents();
     $body.contents().remove();
@@ -66,6 +66,7 @@
     $bookSummary = $book.find('.book-summary');
     $bookBody = $book.find('.book-body');
     $bookPage = $book.find('.page-inner > .normal');
+    $bookTitle = $book.find('.book-title');
     $toggleSummary.on('click', function(evt) {
       $book.toggleClass('with-summary');
       return evt.preventDefault();
@@ -73,6 +74,10 @@
     renderToc = function() {
       var $summary;
       $summary = $('<ul class="summary"></ul>');
+      if (BookConfig.issuesUrl) {
+        $summary.append("<li class='issues'><a href='" + BookConfig.issuesUrl + "'>Questions and Issues</a></li>");
+      }
+      $summary.append("<li class='edit-contribute'><a href='" + BookConfig.url + "'>Edit and Contribute</a></li>");
       $summary.append('<li class="divider"/>');
       $summary.append(tocHelper.$toc.children('li'));
       $bookSummary.contents().remove();
@@ -118,6 +123,7 @@
         var $a, a, el, href, tocUrl, _i, _len, _ref;
         this._tocHref = _tocHref;
         this.$toc = $toc;
+        this.$title = $title;
         tocUrl = URI(BookConfig.toc.url).absoluteTo(removeTrailingSlash(window.location.href));
         this._tocTitles = {};
         this._tocList = (function() {
@@ -172,10 +178,12 @@
       $root = $('<div>' + html + '</div>');
       $title = $root.children('title').contents();
       $toc = $root.find(BookConfig.toc.selector).first();
-      return tocHelper.loadToc(BookConfig.toc.url, $toc, $title);
+      tocHelper.loadToc(BookConfig.toc.url, $toc, $title);
+      return $bookTitle.html(tocHelper.$title);
     });
     $bookPage.append($originalPage);
     changePage = function(href) {
+      $book.addClass('loading');
       return $.ajax({
         url: href,
         accept: 'text/html'
@@ -184,7 +192,8 @@
         $html = $("<div>" + html + "</div>");
         $html.children('meta, link, script, title').remove();
         $bookPage.contents().remove();
-        return $bookPage.append($html);
+        $bookPage.append($html);
+        return $book.removeClass('loading');
       });
     };
     return $('body').on('click', 'a[href]:not([href^="#"])', function(evt) {
