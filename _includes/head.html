@@ -28,11 +28,14 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.github.url }}/atom.xml">
 
   <script type="text/javascript" src="{{ site.github.url }}/public/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="{{ site.github.url }}/public/js/uri.js"></script>
 
   <script type="text/javascript">
-    window.SITE = {
+    window.Book = {
+      'includes': {'jquery': null, 'fontawesome': null},
       'url': '{{ site.github.url }}',
-      'toc': '{{ site.github.url }}/contents/toc/'
+      'toc': {'url': '{{ site.github.url }}/contents/toc'},
+      'serverAddsTrailingSlash': true
     };
   </script>
 
