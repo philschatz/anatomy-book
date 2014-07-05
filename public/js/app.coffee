@@ -1,23 +1,17 @@
 BookConfig = window.Book or {}
 BookConfig.includes ?= {}
-BookConfig.includes.jquery       ?= '//code.jquery.com/jquery-1.11.1.min.js'
 BookConfig.includes.fontawesome  ?= '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'
 BookConfig.urlFixer ?= (val) -> val
 BookConfig.toc ?= {}
 BookConfig.toc.url       ?= '../toc'   # or '../SUMMARY' for GitBook
 BookConfig.toc.selector  ?= 'nav, ol, ul'  # picks the first one that matches
 BookConfig.baseHref ?= null # or '//archive.cnx.org/contents' (for loading resources)
-BookConfig.serverAddsTrailingSlash ?= false
+BookConfig.serverAddsTrailingSlash ?= false # Used because jekyll adds trailing slashes
 
 
 
 
-# Inject the <script> and <link> tags for jQuery and FontAwesome
-if BookConfig.includes.jquery
-  jq = document.createElement('script')
-  jq.src = BookConfig.includes.jquery
-  document.head.appendChild(jq)
-
+# Inject the <link> tags for FontAwesome
 if BookConfig.includes.fontawesome
   fa = document.createElement('link')
   fa.rel = 'stylesheet'
