@@ -1,11 +1,11 @@
 BookConfig = window.Book or {}
 BookConfig.includes ?= {}
-BookConfig.includes.jquery       ?= '//code.jquery.com/alsjkdsad'
-BookConfig.includes.fontawesome  ?= '//bootstrapcdn.com/asdasdas'
-BookConfig.includes.theme        ?= '//philschatz.com/gh-book/default.css'
+BookConfig.includes.jquery       ?= '//code.jquery.com/jquery-1.11.1.min.js'
+BookConfig.includes.fontawesome  ?= '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'
+BookConfig.urlFixer ?= (val) -> val
 BookConfig.toc ?= {}
 BookConfig.toc.url       ?= '../toc'   # or '../SUMMARY' for GitBook
-BookConfig.toc.selector  ?= 'nav, ol'  # picks the first one that matches
+BookConfig.toc.selector  ?= 'nav, ol, ul'  # picks the first one that matches
 BookConfig.baseHref ?= null # or '//archive.cnx.org/contents' (for loading resources)
 BookConfig.serverAddsTrailingSlash ?= false
 
@@ -73,6 +73,7 @@ $ () ->
   $bookPage = $book.find('.page-inner > .normal')
   $bookTitle = $book.find('.book-title')
 
+
   $toggleSummary.on 'click', (evt) ->
     $book.toggleClass('with-summary')
     evt.preventDefault()
@@ -93,12 +94,15 @@ $ () ->
   renderNextPrev = ->
     # Add next/prev buttons to the page
     $bookBody.children('.navigation').remove()
-    prev = tocHelper.prevPageHref(removeTrailingSlash(window.location.href))
-    next = tocHelper.nextPageHref(removeTrailingSlash(window.location.href))
+    current = removeTrailingSlash(window.location.href)
+    prev = tocHelper.prevPageHref(current)
+    next = tocHelper.nextPageHref(current)
     if prev
+      prev = URI(addTrailingSlash(prev)).relativeTo(URI(window.location.href)).toString()
       $prevPage = $("<a class='navigation navigation-prev' href='#{prev}'><i class='fa fa-chevron-left'></i></a>")
       $bookBody.append($prevPage)
     if next
+      next = URI(addTrailingSlash(next)).relativeTo(URI(window.location.href)).toString()
       $nextPage = $("<a class='navigation navigation-next' href='#{next}'><i class='fa fa-chevron-right'></i></a>")
       $bookBody.append($nextPage)
 
@@ -121,7 +125,7 @@ $ () ->
       tocUrl = URI(BookConfig.toc.url).absoluteTo(removeTrailingSlash(window.location.href))
 
       @_tocTitles = {}
-      @_tocList = for el in $toc.find('a')
+      @_tocList = for el in $toc.find('a[href]')
         href = URI(el.getAttribute('href')).absoluteTo(tocUrl).toString()
         @_tocTitles[href] = $(el).text()
         href
@@ -150,33 +154,53 @@ $ () ->
       @_tocList[currentIndex + 1] # returns undefined if no next page
 
 
-  $.ajax(url: BookConfig.toc.url, accept: 'text/html')
+  $.ajax(url: BookConfig.urlFixer(BookConfig.toc.url), headers: {'Accept': 'application/xhtml+xml'}, dataType: 'html')
   .then (html) ->
     $root = $('<div>' + html + '</div>')
-    $title = $root.children('title').contents()
     $toc = $root.find(BookConfig.toc.selector).first()
+    if $toc[0].tagName.toLowerCase() is 'ul'
+      # HACK for collection HTML
+      $title = $toc.children().first().contents()
+      $toc = $toc.find('ul').first()
+    else
+      $title = $root.children('title').contents()
     tocHelper.loadToc(BookConfig.toc.url, $toc, $title)
     $bookTitle.html(tocHelper.$title)
 
+  # Fetch resources without fixing up their paths
+  if BookConfig.baseHref
+    $book.find('base').remove()
+    $book.prepend("<base href='#{BookConfig.baseHref}'/>")
 
   $bookPage.append($originalPage)
 
   changePage = (href) ->
     $book.addClass('loading')
-    $.ajax(url: href, accept: 'text/html')
+    $.ajax(url: BookConfig.urlFixer(href), headers: {'Accept': 'application/xhtml+xml'}, dataType: 'html')
     .then (html) ->
       $html = $("<div>#{html}</div>")
       $html.children('meta, link, script, title').remove()
 
       $bookPage.contents().remove()
-      $bookPage.append($html) # TODO: Strip out title and meta tags
+
+      # Fetch resources without fixing up their paths
+      if BookConfig.baseHref
+        $book.find('base').remove()
+        $book.prepend("<base href='#{BookConfig.urlFixer(href)}'/>")
+
+      $bookPage.append($html.children()) # TODO: Strip out title and meta tags
       $book.removeClass('loading')
 
   # Listen to clicks and handle them without causing a page reload
   $('body').on 'click', 'a[href]:not([href^="#"])', (evt) ->
-    href = addTrailingSlash(@href)
+    href = addTrailingSlash($(@).attr('href'))
+    href = URI(href).absoluteTo(URI(window.location.href)).toString()
+
     changePage(href)
     .then ->
+      # Use `window.location.origin` to get around a <base href=""> pointing to another hostname
+      unless /https?:\/\//.test(href)
+        href = "#{window.location.origin}#{href}"
       window.history.pushState(null, null, href)
       renderNextPrev()
 
