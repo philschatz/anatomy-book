@@ -99,9 +99,18 @@ $ () ->
     $summary.append('<li class="divider"/>')
     $summary.append(tocHelper.$toc.children('li'))
 
+    # Update the ToC to show which links have been visited
+    # Add a "hidden" checkmark next to each item
+    $summary.find('a[href]').parent().prepend('<i class="fa fa-check"></i>')
+    for key of JSON.parse(window.localStorage.visited)
+      $summary.find("li:has(> a[href='#{key}'])").addClass('visited')
+
+
     $bookSummary.children('.summary').remove()
     $bookSummary.append($summary)
 
+    currentPagePath = URI(window.location.href).pathname()
+    $bookSummary.find(".summary li:has(> a[href='#{currentPagePath}'])")[0]?.scrollIntoView()
     renderNextPrev()
 
   renderNextPrev = ->
@@ -143,7 +152,7 @@ $ () ->
       href = href.replace(/\.md$/, '.html')
       a.setAttribute('href', href)
 
-  pageBeforeRender = ($els) ->
+  pageBeforeRender = ($els, href) ->
     for el in $els.find('a[href]')
       mdToHtmlFix(el)
 
@@ -153,6 +162,14 @@ $ () ->
       $figure = $img.wrap('<figure>').parent()
       $figure.append("<figcaption>#{$img.attr('title')}</figcaption>")
       $figure.prepend("<div data-type='title'>#{$img.attr('data-title')}</div>") if $img.attr('data-title')
+
+    # Remember that this page has been visited
+    currentPagePath = URI(href).pathname()
+    visited = window.localStorage.visited and JSON.parse(window.localStorage.visited) or {}
+    visited[currentPagePath] = new Date()
+    window.localStorage.visited = JSON.stringify(visited)
+
+    $bookSummary.find(".summary li:has(> a[href='#{currentPagePath}'])").addClass('visited')[0]?.scrollIntoView()
 
 
   tocHelper = new class TocHelper
@@ -217,7 +234,7 @@ $ () ->
     $book.find('base').remove()
     $book.prepend("<base href='#{BookConfig.baseHref}'/>")
 
-  pageBeforeRender($originalPage)
+  pageBeforeRender($originalPage, URI(window.location.href).pathname())
   $bookPage.append($originalPage)
 
   changePage = (href) ->
@@ -234,7 +251,7 @@ $ () ->
         $book.find('base').remove()
         $book.prepend("<base href='#{BookConfig.urlFixer(href)}'/>")
 
-      pageBeforeRender($html.children())
+      pageBeforeRender($html.children(), href)
       $bookPage.append($html.children()) # TODO: Strip out title and meta tags
       $book.removeClass('loading')
       # Scroll to top of page after loading
@@ -264,3 +281,4 @@ $ () ->
       renderNextPrev()
 
     evt.preventDefault()
+

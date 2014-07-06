@@ -1,6 +1,12 @@
 @import 'gitbook.css';
 
 
+// ToC checkmark
+.summary li:not(.visited) > .fa-check { display: none !important; }
+.summary li.visited       > .fa-check { display: inline-block !important; right: auto !important; top: auto !important; }
+.summary li.visited > a { font-weight: bold; }
+
+
 // For cnx.org books: need to bold the titles to look like <h1>
 section.normal > .title {
   font-weight: bold;

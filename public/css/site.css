@@ -1,4 +1,15 @@
 @import 'gitbook.css';
+.summary li:not(.visited) > .fa-check {
+  display: none !important;
+}
+.summary li.visited > .fa-check {
+  display: inline-block !important;
+  right: auto !important;
+  top: auto !important;
+}
+.summary li.visited > a {
+  font-weight: bold;
+}
 section.normal > .title {
   font-weight: bold;
   font-size: 2.5em;

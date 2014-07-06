@@ -78,7 +78,7 @@
       return evt.preventDefault();
     });
     renderToc = function() {
-      var $summary;
+      var $summary, currentPagePath, key, _ref;
       $summary = $('<ul class="summary"></ul>');
       if (BookConfig.issuesUrl) {
         $summary.append("<li class='issues'><a target='_blank' href='" + BookConfig.issuesUrl + "'>Questions and Issues</a></li>");
@@ -86,8 +86,16 @@
       $summary.append("<li class='edit-contribute'><a target='_blank' href='" + BookConfig.url + "'>Edit and Contribute</a></li>");
       $summary.append('<li class="divider"/>');
       $summary.append(tocHelper.$toc.children('li'));
+      $summary.find('a[href]').parent().prepend('<i class="fa fa-check"></i>');
+      for (key in JSON.parse(window.localStorage.visited)) {
+        $summary.find("li:has(> a[href='" + key + "'])").addClass('visited');
+      }
       $bookSummary.children('.summary').remove();
       $bookSummary.append($summary);
+      currentPagePath = URI(window.location.href).pathname();
+      if ((_ref = $bookSummary.find(".summary li:has(> a[href='" + currentPagePath + "'])")[0]) != null) {
+        _ref.scrollIntoView();
+      }
       return renderNextPrev();
     };
     renderNextPrev = function() {
@@ -131,27 +139,28 @@
         return a.setAttribute('href', href);
       }
     };
-    pageBeforeRender = function($els) {
-      var $figure, $img, el, img, _i, _j, _len, _len1, _ref, _ref1, _results;
+    pageBeforeRender = function($els, href) {
+      var $figure, $img, currentPagePath, el, img, visited, _i, _j, _len, _len1, _ref, _ref1, _ref2;
       _ref = $els.find('a[href]');
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         el = _ref[_i];
         mdToHtmlFix(el);
       }
       _ref1 = $els.find('img[title]');
-      _results = [];
       for (_j = 0, _len1 = _ref1.length; _j < _len1; _j++) {
         img = _ref1[_j];
         $img = $(img);
         $figure = $img.wrap('<figure>').parent();
         $figure.append("<figcaption>" + ($img.attr('title')) + "</figcaption>");
         if ($img.attr('data-title')) {
-          _results.push($figure.prepend("<div data-type='title'>" + ($img.attr('data-title')) + "</div>"));
-        } else {
-          _results.push(void 0);
+          $figure.prepend("<div data-type='title'>" + ($img.attr('data-title')) + "</div>");
         }
       }
-      return _results;
+      currentPagePath = URI(href).pathname();
+      visited = window.localStorage.visited && JSON.parse(window.localStorage.visited) || {};
+      visited[currentPagePath] = new Date();
+      window.localStorage.visited = JSON.stringify(visited);
+      return (_ref2 = $bookSummary.find(".summary li:has(> a[href='" + currentPagePath + "'])").addClass('visited')[0]) != null ? _ref2.scrollIntoView() : void 0;
     };
     tocHelper = new (TocHelper = (function() {
       function TocHelper() {}
@@ -243,7 +252,7 @@
       $book.find('base').remove();
       $book.prepend("<base href='" + BookConfig.baseHref + "'/>");
     }
-    pageBeforeRender($originalPage);
+    pageBeforeRender($originalPage, URI(window.location.href).pathname());
     $bookPage.append($originalPage);
     changePage = function(href) {
       $book.addClass('loading');
@@ -262,7 +271,7 @@
           $book.find('base').remove();
           $book.prepend("<base href='" + (BookConfig.urlFixer(href)) + "'/>");
         }
-        pageBeforeRender($html.children());
+        pageBeforeRender($html.children(), href);
         $bookPage.append($html.children());
         $book.removeClass('loading');
         return $('.body-inner').scrollTop(0);
