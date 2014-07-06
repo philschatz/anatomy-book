@@ -10,16 +10,12 @@ BookConfig.serverAddsTrailingSlash ?= false # Used because jekyll adds trailing 
 
 
 
-
 # Inject the <link> tags for FontAwesome
 if BookConfig.includes.fontawesome
   fa = document.createElement('link')
   fa.rel = 'stylesheet'
   fa.href = BookConfig.includes.fontawesome
   document.head.appendChild(fa)
-
-
-
 
 
 
@@ -46,6 +42,9 @@ BOOK_TEMPLATE = '''
       <div class="body-inner">
         <div class="page-wrapper" tabindex="-1">
           <div class="book-progress">
+            <div class="bar">
+              <div class="inner" style="min-width: 0%;"></div>
+            </div>
           </div>
           <div class="page-inner">
             <section class="normal">
@@ -75,6 +74,7 @@ $ () ->
   $bookBody = $book.find('.book-body')
   $bookPage = $book.find('.page-inner > .normal')
   $bookTitle = $book.find('.book-title')
+  $bookProgressBar = $book.find('.book-progress .bar .inner')
 
 
   $toggleSummary.on 'click', (evt) ->
@@ -104,6 +104,12 @@ $ () ->
     renderNextPrev()
 
   renderNextPrev = ->
+    # Update the progress bar
+    currentPageIndex = tocHelper._tocList.indexOf(window.location.href)
+    totalPageCount = tocHelper._tocList.length
+    $bookProgressBar.width("#{currentPageIndex * 100 / totalPageCount}%")
+    $bookProgressBar.attr('title', "Reading Page #{currentPageIndex} of #{totalPageCount}")
+
     # Add next/prev buttons to the page
     $bookBody.children('.navigation').remove()
     current = removeTrailingSlash(window.location.href)
@@ -146,6 +152,7 @@ $ () ->
       $figure = $img.wrap('<figure>').parent()
       $figure.append("<figcaption>#{$img.attr('title')}</figcaption>")
       $figure.prepend("<div data-type='title'>#{$img.attr('data-title')}</div>") if $img.attr('data-title')
+
 
   tocHelper = new class TocHelper
     _tocHref: null

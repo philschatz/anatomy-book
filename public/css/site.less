@@ -1,5 +1,12 @@
 @import 'gitbook.css';
 
+
+// For cnx.org books: need to bold the titles to look like <h1>
+section.normal > .title {
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
 .book.loading .book-title { display: none; }
 .book:not(.loading) .book-spinner { display: none; }
 
@@ -59,9 +66,12 @@ h6:hover .header-link {
 
 .book {
 
+  .book-body .book-progress .bar { height: 10px; }
+
   &.with-summary {
     .book-body    { left: 350px; }
     .book-summary { width: 350px; }
+    .toggle-summary { background-color: #fafafa; }
   }
 
 
@@ -69,7 +79,6 @@ h6:hover .header-link {
     background-color: #fafafa;
 
     .summary {
-      background-color: #fafafa;
       counter-reset: chapter;
 
       li.part { font-size: 130%; font-weight: bold; color: black; padding-left: 15px; }

@@ -1,4 +1,8 @@
 @import 'gitbook.css';
+section.normal > .title {
+  font-weight: bold;
+  font-size: 2.5em;
+}
 .book.loading .book-title {
   display: none;
 }
@@ -43,17 +47,22 @@ h6:hover .header-link {
   opacity: 1;
   color: black !important;
 }
+.book .book-body .book-progress .bar {
+  height: 10px;
+}
 .book.with-summary .book-body {
   left: 350px;
 }
 .book.with-summary .book-summary {
   width: 350px;
 }
+.book.with-summary .toggle-summary {
+  background-color: #fafafa;
+}
 .book .book-summary {
   background-color: #fafafa;
 }
 .book .book-summary .summary {
-  background-color: #fafafa;
   counter-reset: chapter;
 }
 .book .book-summary .summary li.part {

@@ -45,10 +45,10 @@
     document.head.appendChild(fa);
   }
 
-  BOOK_TEMPLATE = '<div class="book with-summary font-size-2 font-family-1">\n\n  <div class="book-header">\n    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>\n    <a href="#" class="btn pull-left toggle-search" aria-label="Search book"><i class="fa fa-search"></i></a>\n    <h1><i class="fa fa-spinner fa-spin book-spinner"></i><span class="book-title"></span></h1>\n\n    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>\n    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>\n    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>\n  </div>\n\n  <div class="book-summary">\n    <div class="book-search">\n      <input type="text" placeholder="Search" class="form-control">\n    </div>\n  </div>\n\n  <div class="book-body">\n    <div class="body-inner">\n      <div class="page-wrapper" tabindex="-1">\n        <div class="book-progress">\n        </div>\n        <div class="page-inner">\n          <section class="normal">\n            <!-- content -->\n          </section>\n        </div>\n      </div>\n    </div>\n  </div>\n\n</div>';
+  BOOK_TEMPLATE = '<div class="book with-summary font-size-2 font-family-1">\n\n  <div class="book-header">\n    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>\n    <a href="#" class="btn pull-left toggle-search" aria-label="Search book"><i class="fa fa-search"></i></a>\n    <h1><i class="fa fa-spinner fa-spin book-spinner"></i><span class="book-title"></span></h1>\n\n    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>\n    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>\n    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>\n  </div>\n\n  <div class="book-summary">\n    <div class="book-search">\n      <input type="text" placeholder="Search" class="form-control">\n    </div>\n  </div>\n\n  <div class="book-body">\n    <div class="body-inner">\n      <div class="page-wrapper" tabindex="-1">\n        <div class="book-progress">\n          <div class="bar">\n            <div class="inner" style="min-width: 0%;"></div>\n          </div>\n        </div>\n        <div class="page-inner">\n          <section class="normal">\n            <!-- content -->\n          </section>\n        </div>\n      </div>\n    </div>\n  </div>\n\n</div>';
 
   $(function() {
-    var $body, $book, $bookBody, $bookPage, $bookSummary, $bookTitle, $originalPage, $toggleSearch, $toggleSummary, TocHelper, addTrailingSlash, changePage, mdToHtmlFix, pageBeforeRender, removeTrailingSlash, renderNextPrev, renderToc, tocHelper;
+    var $body, $book, $bookBody, $bookPage, $bookProgressBar, $bookSummary, $bookTitle, $originalPage, $toggleSearch, $toggleSummary, TocHelper, addTrailingSlash, changePage, mdToHtmlFix, pageBeforeRender, removeTrailingSlash, renderNextPrev, renderToc, tocHelper;
     $body = $('body');
     $originalPage = $body.contents();
     $body.contents().remove();
@@ -60,6 +60,7 @@
     $bookBody = $book.find('.book-body');
     $bookPage = $book.find('.page-inner > .normal');
     $bookTitle = $book.find('.book-title');
+    $bookProgressBar = $book.find('.book-progress .bar .inner');
     $toggleSummary.on('click', function(evt) {
       if ($book.hasClass('with-summary')) {
         $book.removeClass('with-search');
@@ -89,7 +90,11 @@
       return renderNextPrev();
     };
     renderNextPrev = function() {
-      var $nextPage, $prevPage, current, next, prev;
+      var $nextPage, $prevPage, current, currentPageIndex, next, prev, totalPageCount;
+      currentPageIndex = tocHelper._tocList.indexOf(window.location.href);
+      totalPageCount = tocHelper._tocList.length;
+      $bookProgressBar.width("" + (currentPageIndex * 100 / totalPageCount) + "%");
+      $bookProgressBar.attr('title', "Reading Page " + currentPageIndex + " of " + totalPageCount);
       $bookBody.children('.navigation').remove();
       current = removeTrailingSlash(window.location.href);
       prev = tocHelper.prevPageHref(current);
