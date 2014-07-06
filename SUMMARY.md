@@ -41,7 +41,7 @@ layout: page
         2. [Layers of the Skin](contents/m46060.md)
         3. [Accessory Structures of the Skin](contents/m46062.md)
         4. [Functions of the Integumentary System](contents/m46064.md)
-        5. [Diseases, Disorders, and Injuries of the Integumentary System](../.md.xh.md)
+        5. [Diseases, Disorders, and Injuries of the Integumentary System](content/m46066.md)
 
     2.  {: .chapter} [Bone Tissue and the Skeletal System](contents/m46290.md)
         2. [The Functions of the Skeletal System](contents/m46341.md)
@@ -169,7 +169,7 @@ layout: page
         4. [The Adaptive Immune Response: T lymphocytes and Their Functional Types](contents/m46560.md)
         5. [The Adaptive Immune Response: B-lymphocytes and Antibodies](contents/m46558.md)
         6. [The Immune Response against Pathogens](contents/m46569.md)
-        7. [Diseases Associated with Depressed or Overactive Immune Responses](../contents.md6.xhtml.md)
+        7. [Diseases Associated with Depressed or Overactive Immune Responses](contents/m46566.md)
         8. [Transplantation and Cancer Immunology](contents/m46583.md)
 
 6.  {: .part} Unit 5: Energy, Maintenance, and Environmental Exchange
