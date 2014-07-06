@@ -3,22 +3,18 @@
 .book.loading .book-title { display: none; }
 .book:not(.loading) .book-spinner { display: none; }
 
-// Module titles from archive.cnx.org
-.page-inner > .normal > .title {
-  font-size: 2.5em;
-  font-weight: bold;
+
+
+.book .book-body .page-wrapper .page-inner section.normal {
+  // QR Codes should be small
+  img[alt^='QR'] { max-width: 2in; }
+
+  // Reset Figure, Note, exercise counters
+  counter-reset: figure, note, exercise, example, table;
 }
 
 
-#sidebar-checkbox:checked ~ .wrap .container {
-  margin-left: 5rem;
-}
 
-#sidebar .comment { color: rgba(255,255,255,.6); }
-
-#sidebar .comment:hover  { text-decoration: none; }
-#sidebar .comment:before { content: '('; }
-#sidebar .comment:after  { content: ')'; }
 
 
 /* When the URL refers to in-page elements make them stand out a bit */
@@ -61,59 +57,70 @@ h6:hover .header-link {
 }
 
 
+.book {
 
-.summary {
-  counter-reset: chapter;
-  background-color: #efefef;
+  &.with-summary {
+    .book-body    { left: 350px; }
+    .book-summary { width: 350px; }
+  }
 
-  li.part { font-size: 130%; }
-  li.part > ol { font-size: 70%; }
 
-  ol {
-    padding: 0;
+  .book-summary {
+    background-color: #fafafa;
 
-    // This is because of Gitbook CSS
-    a { display: inline !important; padding: 0; }
+    .summary {
+      background-color: #fafafa;
+      counter-reset: chapter;
 
-    li {
-      padding: 10px 0px;
-      list-style-type: none;
-      /* Add ellipses if the title is long */
-      white-space: nowrap;
-      overflow-x: hidden;
-      text-overflow: ellipsis;
+      li.part { font-size: 130%; font-weight: bold; color: black; padding-left: 15px; }
+      li.part > ol { font-size: 70%; font-weight: normal; }
 
-      &::before {
-        font-weight: bold;
-      }
+      ol {
+        padding: 0;
 
-      &.chapter {
-        counter-increment: chapter;
-        counter-reset: section;
+        // This is because of Gitbook CSS
+        a { display: inline !important; padding: 0; }
 
-        &::before {
-          content: counter(chapter) '. ';
-          color: black;
-          font-weight: bold;
-          font-size: 120%;
-          padding-left: 1em;
-        }
-        > a { font-size: 120%; }
+        li {
+          padding: 10px 0px;
+          list-style-type: none;
+          /* Add ellipses if the title is long */
+          white-space: nowrap;
+          overflow-x: hidden;
+          text-overflow: ellipsis;
 
-        > ol > li {
-          counter-increment: section;
           &::before {
-            content: counter(chapter) '.' counter(section) ' ';
-            color: black;
             font-weight: bold;
-            padding-left: 2em;
+          }
+
+          &.chapter {
+            counter-increment: chapter;
+            counter-reset: section;
+
+            &::before {
+              content: counter(chapter) '. ';
+              color: black;
+              font-weight: bold;
+              font-size: 120%;
+              padding-left: 1em;
+            }
+            > a { font-size: 120%; }
+
+            > ol > li {
+              counter-increment: section;
+              &::before {
+                content: counter(chapter) '.' counter(section) ' ';
+                color: black;
+                font-weight: bold;
+                padding-left: 2em;
+              }
+            }
           }
         }
       }
     }
   }
 }
-
 
 .page { counter-reset: figure; }
 

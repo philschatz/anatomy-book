@@ -45,22 +45,34 @@
     document.head.appendChild(fa);
   }
 
-  BOOK_TEMPLATE = '<div class="book without-animation with-summary font-size-2 font-family-1">\n\n  <div class="book-header">\n    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>\n    <h1><i class="fa fa-spinner fa-spin book-spinner"></i><span class="book-title"></span></h1>\n  </div>\n\n  <div class="book-summary">\n  </div>\n\n  <div class="book-body">\n    <div class="body-inner">\n      <div class="page-wrapper" tabindex="-1">\n        <div class="book-progress">\n        </div>\n        <div class="page-inner">\n          <section class="normal">\n            <!-- content -->\n          </section>\n        </div>\n      </div>\n    </div>\n  </div>\n\n</div>';
+  BOOK_TEMPLATE = '<div class="book with-summary font-size-2 font-family-1">\n\n  <div class="book-header">\n    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>\n    <a href="#" class="btn pull-left toggle-search" aria-label="Search book"><i class="fa fa-search"></i></a>\n    <h1><i class="fa fa-spinner fa-spin book-spinner"></i><span class="book-title"></span></h1>\n\n    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>\n    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>\n    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>\n  </div>\n\n  <div class="book-summary">\n    <div class="book-search">\n      <input type="text" placeholder="Search" class="form-control">\n    </div>\n  </div>\n\n  <div class="book-body">\n    <div class="body-inner">\n      <div class="page-wrapper" tabindex="-1">\n        <div class="book-progress">\n        </div>\n        <div class="page-inner">\n          <section class="normal">\n            <!-- content -->\n          </section>\n        </div>\n      </div>\n    </div>\n  </div>\n\n</div>';
 
   $(function() {
-    var $body, $book, $bookBody, $bookPage, $bookSummary, $bookTitle, $originalPage, $toggleSummary, TocHelper, addTrailingSlash, changePage, removeTrailingSlash, renderNextPrev, renderToc, tocHelper;
+    var $body, $book, $bookBody, $bookPage, $bookSummary, $bookTitle, $originalPage, $toggleSearch, $toggleSummary, TocHelper, addTrailingSlash, changePage, mdToHtmlFix, pageBeforeRender, removeTrailingSlash, renderNextPrev, renderToc, tocHelper;
     $body = $('body');
     $originalPage = $body.contents();
     $body.contents().remove();
     $body.append(BOOK_TEMPLATE);
     $book = $body.find('.book');
     $toggleSummary = $book.find('.toggle-summary');
+    $toggleSearch = $book.find('.toggle-search');
     $bookSummary = $book.find('.book-summary');
     $bookBody = $book.find('.book-body');
     $bookPage = $book.find('.page-inner > .normal');
     $bookTitle = $book.find('.book-title');
     $toggleSummary.on('click', function(evt) {
+      if ($book.hasClass('with-summary')) {
+        $book.removeClass('with-search');
+      }
       $book.toggleClass('with-summary');
+      return evt.preventDefault();
+    });
+    $toggleSearch.on('click', function(evt) {
+      if (!$book.hasClass('with-search')) {
+        $book.addClass('with-summary');
+        $book.find('.book-search .form-control').focus();
+      }
+      $book.toggleClass('with-search');
       return evt.preventDefault();
     });
     renderToc = function() {
@@ -72,7 +84,7 @@
       $summary.append("<li class='edit-contribute'><a href='" + BookConfig.url + "'>Edit and Contribute</a></li>");
       $summary.append('<li class="divider"/>');
       $summary.append(tocHelper.$toc.children('li'));
-      $bookSummary.contents().remove();
+      $bookSummary.children('.summary').remove();
       $bookSummary.append($summary);
       return renderNextPrev();
     };
@@ -105,6 +117,36 @@
       }
       return href;
     };
+    mdToHtmlFix = function(a) {
+      var href;
+      href = a.getAttribute('href');
+      if (href) {
+        href = href.replace(/\.md$/, '.html');
+        return a.setAttribute('href', href);
+      }
+    };
+    pageBeforeRender = function($els) {
+      var $figure, $img, el, img, _i, _j, _len, _len1, _ref, _ref1, _results;
+      _ref = $els.find('a[href]');
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        el = _ref[_i];
+        mdToHtmlFix(el);
+      }
+      _ref1 = $els.find('img[title]');
+      _results = [];
+      for (_j = 0, _len1 = _ref1.length; _j < _len1; _j++) {
+        img = _ref1[_j];
+        $img = $(img);
+        $figure = $img.wrap('<figure>').parent();
+        $figure.append("<figcaption>" + ($img.attr('title')) + "</figcaption>");
+        if ($img.attr('data-title')) {
+          _results.push($figure.prepend("<div data-type='title'>" + ($img.attr('data-title')) + "</div>"));
+        } else {
+          _results.push(void 0);
+        }
+      }
+      return _results;
+    };
     tocHelper = new (TocHelper = (function() {
       function TocHelper() {}
 
@@ -115,18 +157,25 @@
       TocHelper.prototype._tocTitles = {};
 
       TocHelper.prototype.loadToc = function(_tocHref, $toc, $title) {
-        var $a, a, el, href, tocUrl, _i, _len, _ref;
+        var $a, a, el, href, tocUrl, _i, _j, _len, _len1, _ref, _ref1;
         this._tocHref = _tocHref;
         this.$toc = $toc;
         this.$title = $title;
         tocUrl = URI(BookConfig.toc.url).absoluteTo(removeTrailingSlash(window.location.href));
+        _ref = this.$toc.find('a[href]');
+        for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+          el = _ref[_i];
+          mdToHtmlFix(el);
+          href = URI(el.getAttribute('href')).absoluteTo(tocUrl).toString();
+          el.setAttribute('href', href);
+        }
         this._tocTitles = {};
         this._tocList = (function() {
-          var _i, _len, _ref, _results;
-          _ref = $toc.find('a[href]');
+          var _j, _len1, _ref1, _results;
+          _ref1 = $toc.find('a[href]');
           _results = [];
-          for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-            el = _ref[_i];
+          for (_j = 0, _len1 = _ref1.length; _j < _len1; _j++) {
+            el = _ref1[_j];
             href = URI(el.getAttribute('href')).absoluteTo(tocUrl).toString();
             this._tocTitles[href] = $(el).text();
             _results.push(href);
@@ -134,9 +183,9 @@
           return _results;
         }).call(this);
         if (BookConfig.serverAddsTrailingSlash) {
-          _ref = this.$toc.find('a');
-          for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-            a = _ref[_i];
+          _ref1 = this.$toc.find('a');
+          for (_j = 0, _len1 = _ref1.length; _j < _len1; _j++) {
+            a = _ref1[_j];
             $a = $(a);
             href = $a.attr('href');
             href = '../' + href;
@@ -188,6 +237,7 @@
       $book.find('base').remove();
       $book.prepend("<base href='" + BookConfig.baseHref + "'/>");
     }
+    pageBeforeRender($originalPage);
     $bookPage.append($originalPage);
     changePage = function(href) {
       $book.addClass('loading');
@@ -206,8 +256,10 @@
           $book.find('base').remove();
           $book.prepend("<base href='" + (BookConfig.urlFixer(href)) + "'/>");
         }
+        pageBeforeRender($html.children());
         $bookPage.append($html.children());
-        return $book.removeClass('loading');
+        $book.removeClass('loading');
+        return $('.body-inner').scrollTop(0);
       });
     };
     return $('body').on('click', 'a[href]:not([href^="#"])', function(evt) {

@@ -24,14 +24,22 @@ if BookConfig.includes.fontawesome
 
 
 BOOK_TEMPLATE = '''
-  <div class="book without-animation with-summary font-size-2 font-family-1">
+  <div class="book with-summary font-size-2 font-family-1">
 
     <div class="book-header">
       <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+      <a href="#" class="btn pull-left toggle-search" aria-label="Search book"><i class="fa fa-search"></i></a>
       <h1><i class="fa fa-spinner fa-spin book-spinner"></i><span class="book-title"></span></h1>
+
+      <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+      <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+      <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
     </div>
 
     <div class="book-summary">
+      <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control">
+      </div>
     </div>
 
     <div class="book-body">
@@ -62,6 +70,7 @@ $ () ->
   # Pull out all the interesting DOM nodes from the template
   $book = $body.find('.book')
   $toggleSummary = $book.find('.toggle-summary')
+  $toggleSearch = $book.find('.toggle-search')
   $bookSummary = $book.find('.book-summary')
   $bookBody = $book.find('.book-body')
   $bookPage = $book.find('.page-inner > .normal')
@@ -69,7 +78,16 @@ $ () ->
 
 
   $toggleSummary.on 'click', (evt) ->
+    if $book.hasClass('with-summary')
+      $book.removeClass('with-search')
     $book.toggleClass('with-summary')
+    evt.preventDefault()
+
+  $toggleSearch.on 'click', (evt) ->
+    unless $book.hasClass('with-search')
+      $book.addClass('with-summary')
+      $book.find('.book-search .form-control').focus()
+    $book.toggleClass('with-search')
     evt.preventDefault()
 
   renderToc = ->
@@ -80,7 +98,7 @@ $ () ->
     $summary.append('<li class="divider"/>')
     $summary.append(tocHelper.$toc.children('li'))
 
-    $bookSummary.contents().remove()
+    $bookSummary.children('.summary').remove()
     $bookSummary.append($summary)
 
     renderNextPrev()
@@ -111,12 +129,37 @@ $ () ->
     href
 
 
+  # Fix up the ToC links if the links to pages end in `.md`
+  mdToHtmlFix = (a) ->
+    href = a.getAttribute('href')
+    if href
+      href = href.replace(/\.md$/, '.html')
+      a.setAttribute('href', href)
+
+  pageBeforeRender = ($els) ->
+    for el in $els.find('a[href]')
+      mdToHtmlFix(el)
+
+    # Convert `img[title]` tags into figures so they get numbered and titles are visible
+    for img in $els.find('img[title]')
+      $img = $(img)
+      $figure = $img.wrap('<figure>').parent()
+      $figure.append("<figcaption>#{$img.attr('title')}</figcaption>")
+      $figure.prepend("<div data-type='title'>#{$img.attr('data-title')}</div>") if $img.attr('data-title')
+
   tocHelper = new class TocHelper
     _tocHref: null
     _tocList: []
     _tocTitles: {}
     loadToc: (@_tocHref, @$toc, @$title) ->
       tocUrl = URI(BookConfig.toc.url).absoluteTo(removeTrailingSlash(window.location.href))
+
+      # Fix up the ToC links if the links to pages end in `.md`
+      for el in @$toc.find('a[href]')
+        mdToHtmlFix(el)
+        # And make them absolute (in case the HTML pages change paths)
+        href = URI(el.getAttribute('href')).absoluteTo(tocUrl).toString()
+        el.setAttribute('href', href)
 
       @_tocTitles = {}
       @_tocList = for el in $toc.find('a[href]')
@@ -166,6 +209,7 @@ $ () ->
     $book.find('base').remove()
     $book.prepend("<base href='#{BookConfig.baseHref}'/>")
 
+  pageBeforeRender($originalPage)
   $bookPage.append($originalPage)
 
   changePage = (href) ->
@@ -182,8 +226,12 @@ $ () ->
         $book.find('base').remove()
         $book.prepend("<base href='#{BookConfig.urlFixer(href)}'/>")
 
+      pageBeforeRender($html.children())
       $bookPage.append($html.children()) # TODO: Strip out title and meta tags
       $book.removeClass('loading')
+      # Scroll to top of page after loading
+      $('.body-inner').scrollTop(0)
+
 
   # Listen to clicks and handle them without causing a page reload
   $('body').on 'click', 'a[href]:not([href^="#"])', (evt) ->

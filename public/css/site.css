@@ -5,24 +5,11 @@
 .book:not(.loading) .book-spinner {
   display: none;
 }
-.page-inner > .normal > .title {
-  font-size: 2.5em;
-  font-weight: bold;
+.book .book-body .page-wrapper .page-inner section.normal {
+  counter-reset: figure, note, exercise, example, table;
 }
-#sidebar-checkbox:checked ~ .wrap .container {
-  margin-left: 5rem;
-}
-#sidebar .comment {
-  color: rgba(255, 255, 255, 0.6);
-}
-#sidebar .comment:hover {
-  text-decoration: none;
-}
-#sidebar .comment:before {
-  content: '(';
-}
-#sidebar .comment:after {
-  content: ')';
+.book .book-body .page-wrapper .page-inner section.normal img[alt^='QR'] {
+  max-width: 2in;
 }
 /* When the URL refers to in-page elements make them stand out a bit */
 :target {
@@ -56,24 +43,37 @@ h6:hover .header-link {
   opacity: 1;
   color: black !important;
 }
-.summary {
+.book.with-summary .book-body {
+  left: 350px;
+}
+.book.with-summary .book-summary {
+  width: 350px;
+}
+.book .book-summary {
+  background-color: #fafafa;
+}
+.book .book-summary .summary {
+  background-color: #fafafa;
   counter-reset: chapter;
-  background-color: #efefef;
 }
-.summary li.part {
+.book .book-summary .summary li.part {
   font-size: 130%;
+  font-weight: bold;
+  color: black;
+  padding-left: 15px;
 }
-.summary li.part > ol {
+.book .book-summary .summary li.part > ol {
   font-size: 70%;
+  font-weight: normal;
 }
-.summary ol {
+.book .book-summary .summary ol {
   padding: 0;
 }
-.summary ol a {
+.book .book-summary .summary ol a {
   display: inline !important;
   padding: 0;
 }
-.summary ol li {
+.book .book-summary .summary ol li {
   padding: 10px 0px;
   list-style-type: none;
   /* Add ellipses if the title is long */
@@ -81,27 +81,27 @@ h6:hover .header-link {
   overflow-x: hidden;
   text-overflow: ellipsis;
 }
-.summary ol li::before {
+.book .book-summary .summary ol li::before {
   font-weight: bold;
 }
-.summary ol li.chapter {
+.book .book-summary .summary ol li.chapter {
   counter-increment: chapter;
   counter-reset: section;
 }
-.summary ol li.chapter::before {
+.book .book-summary .summary ol li.chapter::before {
   content: counter(chapter) '. ';
   color: black;
   font-weight: bold;
   font-size: 120%;
   padding-left: 1em;
 }
-.summary ol li.chapter > a {
+.book .book-summary .summary ol li.chapter > a {
   font-size: 120%;
 }
-.summary ol li.chapter > ol > li {
+.book .book-summary .summary ol li.chapter > ol > li {
   counter-increment: section;
 }
-.summary ol li.chapter > ol > li::before {
+.book .book-summary .summary ol li.chapter > ol > li::before {
   content: counter(chapter) '.' counter(section) ' ';
   color: black;
   font-weight: bold;
