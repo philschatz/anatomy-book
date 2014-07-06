@@ -4,15 +4,6 @@ layout: page
 
 1.  {: .preface} [Preface](contents/m46844.md)
 2.  {: .part} Unit 1: Levels of Organization
-    1.  {: .chapter} [An Introduction to the Human Body](contents/m45981.md)
-        2. [Overview of Anatomy and Physiology](contents/m45983.md)
-        3. [Structural Organization of the Human Body](contents/m45985.md)
-        4. [Functions of Human Life](contents/m45986.md)
-        5. [Requirements for Human Life](contents/m45988.md)
-        6. [Homeostasis](contents/m45989.md)
-        7. [Anatomical Terminology](contents/m45990.md)
-        8. [Medical Imaging](contents/m45991.md)
-
     2.  {: .chapter} [The Chemical Level of Organization](contents/m45996.md)
         2. [Elements and Atoms: The Building Blocks of Matter](contents/m45998.md)
         3. [Chemical Bonds](contents/m46000.md)
@@ -35,6 +26,16 @@ layout: page
         5. [Muscle Tissue and Motion](contents/m46055.md)
         6. [Nervous Tissue Mediates Perception and Response](contents/m46057.md)
         7. [Tissue Injury and Aging](contents/m46058.md)
+
+    1.  {: .chapter} [An Introduction to the Human Body](contents/m45981.md)
+        2. [Overview of Anatomy and Physiology](contents/m45983.md)
+        3. [Structural Organization of the Human Body](contents/m45985.md)
+        4. [Functions of Human Life](contents/m45986.md)
+        5. [Requirements for Human Life](contents/m45988.md)
+        6. [Homeostasis](contents/m45989.md)
+        7. [Anatomical Terminology](contents/m45990.md)
+        8. [Medical Imaging](contents/m45991.md)
+
 
 3.  {: .part} Unit 2: Support and Movement
     1.  {: .chapter} [The Integumentary System](contents/m46059.md)
