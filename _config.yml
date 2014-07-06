@@ -23,6 +23,7 @@ paginate:         5
 version:          1.0.0
 
 github:
-  repo:           https://github.com/philschatz/anatomy-book
+  repository_url: https://github.com/philschatz/anatomy-book
+  url:            ''
 
 bookviewer:       http://philschatz.com/book-viewer
