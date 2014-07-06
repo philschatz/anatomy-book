@@ -70,6 +70,7 @@ $ () ->
   $book = $body.find('.book')
   $toggleSummary = $book.find('.toggle-summary')
   $toggleSearch = $book.find('.toggle-search')
+  $bookSearchInput = $book.find('.book-search .form-control')
   $bookSummary = $book.find('.book-summary')
   $bookBody = $book.find('.book-body')
   $bookPage = $book.find('.page-inner > .normal')
@@ -86,7 +87,7 @@ $ () ->
   $toggleSearch.on 'click', (evt) ->
     unless $book.hasClass('with-search')
       $book.addClass('with-summary')
-      $book.find('.book-search .form-control').focus()
+      $bookSearchInput.focus()
     $book.toggleClass('with-search')
     evt.preventDefault()
 
@@ -238,6 +239,15 @@ $ () ->
       $book.removeClass('loading')
       # Scroll to top of page after loading
       $('.body-inner').scrollTop(0)
+
+
+  $('body').on 'keydown', (evt) ->
+    switch evt.which
+      when 37 then $link = $('.book .navigation-prev') # left key
+      when 39 then $link = $('.book .navigation-next') # right key
+      else $link = null
+    unless $bookSearchInput.is(':focus')
+      $link?.click()
 
 
   # Listen to clicks and handle them without causing a page reload
