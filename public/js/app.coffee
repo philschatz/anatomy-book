@@ -93,8 +93,8 @@ $ () ->
   renderToc = ->
     $summary = $('<ul class="summary"></ul>')
     if BookConfig.issuesUrl
-      $summary.append("<li class='issues'><a href='#{BookConfig.issuesUrl}'>Questions and Issues</a></li>")
-    $summary.append("<li class='edit-contribute'><a href='#{BookConfig.url}'>Edit and Contribute</a></li>")
+      $summary.append("<li class='issues'><a target='_blank' href='#{BookConfig.issuesUrl}'>Questions and Issues</a></li>")
+    $summary.append("<li class='edit-contribute'><a target='_blank' href='#{BookConfig.url}'>Edit and Contribute</a></li>")
     $summary.append('<li class="divider"/>')
     $summary.append(tocHelper.$toc.children('li'))
 
@@ -165,7 +165,7 @@ $ () ->
       for el in @$toc.find('a[href]')
         mdToHtmlFix(el)
         # And make them absolute (in case the HTML pages change paths)
-        href = URI(el.getAttribute('href')).absoluteTo(tocUrl).toString()
+        href = URI(el.getAttribute('href')).absoluteTo(tocUrl).pathname().toString()
         el.setAttribute('href', href)
 
       @_tocTitles = {}
@@ -241,7 +241,7 @@ $ () ->
 
 
   # Listen to clicks and handle them without causing a page reload
-  $('body').on 'click', 'a[href]:not([href^="#"])', (evt) ->
+  $('body').on 'click', 'a[href]:not([href^="#"]):not([href^="http"])', (evt) ->
     href = addTrailingSlash($(@).attr('href'))
     href = URI(href).absoluteTo(URI(window.location.href)).toString()
 

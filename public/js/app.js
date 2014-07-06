@@ -80,9 +80,9 @@
       var $summary;
       $summary = $('<ul class="summary"></ul>');
       if (BookConfig.issuesUrl) {
-        $summary.append("<li class='issues'><a href='" + BookConfig.issuesUrl + "'>Questions and Issues</a></li>");
+        $summary.append("<li class='issues'><a target='_blank' href='" + BookConfig.issuesUrl + "'>Questions and Issues</a></li>");
       }
-      $summary.append("<li class='edit-contribute'><a href='" + BookConfig.url + "'>Edit and Contribute</a></li>");
+      $summary.append("<li class='edit-contribute'><a target='_blank' href='" + BookConfig.url + "'>Edit and Contribute</a></li>");
       $summary.append('<li class="divider"/>');
       $summary.append(tocHelper.$toc.children('li'));
       $bookSummary.children('.summary').remove();
@@ -171,7 +171,7 @@
         for (_i = 0, _len = _ref.length; _i < _len; _i++) {
           el = _ref[_i];
           mdToHtmlFix(el);
-          href = URI(el.getAttribute('href')).absoluteTo(tocUrl).toString();
+          href = URI(el.getAttribute('href')).absoluteTo(tocUrl).pathname().toString();
           el.setAttribute('href', href);
         }
         this._tocTitles = {};
@@ -267,7 +267,7 @@
         return $('.body-inner').scrollTop(0);
       });
     };
-    return $('body').on('click', 'a[href]:not([href^="#"])', function(evt) {
+    return $('body').on('click', 'a[href]:not([href^="#"]):not([href^="http"])', function(evt) {
       var href;
       href = addTrailingSlash($(this).attr('href'));
       href = URI(href).absoluteTo(URI(window.location.href)).toString();
