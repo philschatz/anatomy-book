@@ -24,3 +24,5 @@ version:          1.0.0
 
 github:
   repo:           https://github.com/philschatz/anatomy-book
+
+bookviewer:       http://philschatz.com/book-viewer
