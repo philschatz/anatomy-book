@@ -22,8 +22,4 @@ paginate:         5
 # Custom vars
 version:          1.0.0
 
-github:
-  repository_url: https://github.com/philschatz/anatomy-book
-  url:            ''
-
-bookviewer:       http://philschatz.com/book-viewer
+bookviewer:       /book-viewer
