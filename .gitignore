@@ -1,2 +1,6 @@
 /_site
-/content
+/resources/*.dbk
+/resources/*.jar
+/resources/unifiedfile*
+/resources/*.html
+/resources/*.txt

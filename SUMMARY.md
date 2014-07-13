@@ -10,14 +10,12 @@ Human Anatomy and Physiology is designed for the two-semester anatomy and physio
 
 1.  {: .preface} [Preface](contents/m46844.md)
 2.  {: .part} Unit 1: Levels of Organization
-    1.  {: .chapter} [An Introduction to the Human Body](contents/m45981.md)
+    1.  {: .chapter} [An Introduction to the Human Body](contents/m45981.md)[An Introduction to the Human Body](contents/m45985.md)[An Introduction to the Human Body](contents/m45986.md)
         1.  [Overview of Anatomy and Physiology](contents/m45983.md)
-        2.  [Structural Organization of the Human Body](contents/m45985.md)
-        3.  [Functions of Human Life](contents/m45986.md)
-        4.  [Requirements for Human Life](contents/m45988.md)
-        5.  [Homeostasis](contents/m45989.md)
-        6.  [Anatomical Terminology](contents/m45990.md)
-        7.  [Medical Imaging](contents/m45991.md)
+        2.  [Requirements for Human Life](contents/m45988.md)
+        3.  [Homeostasis](contents/m45989.md)
+        4.  [Anatomical Terminology](contents/m45990.md)
+        5.  [Medical Imaging](contents/m45991.md)
     
     2.  {: .chapter} [The Chemical Level of Organization](contents/m45996.md)
         1.  [Elements and Atoms: The Building Blocks of Matter](contents/m45998.md)
