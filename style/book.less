@@ -1,0 +1,79 @@
+// Define variables
+@teal: #339999;
+@purple: #660066;
+@blue: #000066;
+@red: #990033;
+@orange: #cc9900;
+@green: #339933;
+@cream: #ffffcc;
+@gray: #ccc;
+@table-border: 1pt solid @teal;
+@page-width: 6in;
+
+
+// The args are title color, background color, path to SVG, top-padding value from svg
+.anatomy {
+  &.aging {
+    page-break-inside: avoid;
+    .x-feature(#330033, @cream, aging, 0.53in); }
+  &.career {
+    page-break-inside: avoid;
+    .x-feature(#006666, @cream, career, 0.51in); }
+  &.diseases {
+    page-break-inside: avoid;
+    .x-feature(#336600, @cream, diseases, 0.59in); }
+  &.disorders {
+    page-break-inside: avoid;
+    .x-feature(#336633, @cream, disorders, 0.59in); }
+  &.everyday {
+    page-break-inside: avoid;
+    .x-feature(#993333, @cream, everyday, 0.44in); }
+  &.homeostatic {
+    page-break-inside: avoid;
+    .x-feature(#993333, @cream, homeostatic, 0.57in); }
+  &.interactive {
+    page-break-inside: avoid; //no breaks within this feature
+    .x-feature(#993333, @cream, interactive, 0.43in);
+    img {   //center qr code
+      display: block;
+      margin-left: auto;
+      margin-right: auto
+    }
+    .link {
+      color: @orange !important;
+      font-weight: bold;
+    }
+  }
+  &.interactive.um {
+    .x-feature(#993333, @cream, interactive_UM, 0.50in);
+    page-break-inside: auto !important; //override no break breaks from interactive feature L#197
+    }
+}
+
+.x-feature (@color, @bg-color, @svg, @padding-top) {
+  &::before {
+    padding-top: @padding-top; //from the SVG files
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-position: top outside;
+    page-break-inside: avoid;
+    page-break-after: avoid;
+    background-color: white;
+    content: "";
+    display: block;
+    // the following are tweaked so the overlays really do over lay
+    margin-left: -1.05em;
+    margin-right: -1.05em;
+    margin-top: -0.05in;
+  }
+
+  background-color: @bg-color;
+  &::before { background-image: url("ccap-anatomy/@{svg}.svg"); }
+
+  padding-top: 0 !important; // HACK to get the SVG Titles to show up without gray on top
+  > header > [data-type='title'] { display: none !important; }
+}
+
+
+//HACK To get the SVG images to load
+.book .book-body .page-wrapper .page-inner [data-type="note"][data-label='']:not(.ui-has-child-title)::before, .book .book-body .page-wrapper .page-inner .note[data-label='']:not(.ui-has-child-title)::before { display: block !important; }
