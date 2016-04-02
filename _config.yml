@@ -1,18 +1,15 @@
+
 # Dependencies
 markdown:         kramdown
-pygments:         true
-
-# redcarpet:
-#   extensions:     ['no_intra_emphasis', 'fenced_code_blocks', 'autolink', 'tables', 'with_toc_data']
 
 # Permalinks
 #permalink:        pretty
 
 # Setup
-title:            "Anatomy & Physiology"
-tagline:          'from http://cnx.org/content/col11496/1.6 (CC-BY)'
+title:            'Anatomy and Physiology'
+tagline:          'from http://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@8.24 (CC-BY)'
 url:              https://github.com/philschatz/anatomy-book
-origin:           http://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22
+origin:           http://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@8.24
 
 author:
   name:           'Openstax'
@@ -21,6 +18,7 @@ author:
 paginate:         5
 
 # Custom vars
-version:          1.0.0
+version:          8.24
 
-bookviewer:       http://philschatz.com/book-viewer
+bookviewer:       /book-viewer
+
