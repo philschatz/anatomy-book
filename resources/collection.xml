@@ -1,0 +1,3072 @@
+<?xml version="1.0"?>
+<col:collection xmlns="http://cnx.rice.edu/collxml"
+                xmlns:cnx="http://cnx.rice.edu/cnxml"
+                xmlns:cnxorg="http://cnx.rice.edu/system-info"
+                xmlns:md="http://cnx.rice.edu/mdml"
+                xmlns:col="http://cnx.rice.edu/collxml"
+                xmlns:cnxml="http://cnx.rice.edu/cnxml"
+                xmlns:m="http://www.w3.org/1998/Math/MathML"
+                xmlns:q="http://cnx.rice.edu/qml/1.0"
+                xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                xmlns:bib="http://bibtexml.sf.net/"
+                xmlns:cc="http://web.resource.org/cc/"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xml:lang="en" type="Textbook">
+  <metadata xmlns:md="http://cnx.rice.edu/mdml"
+          mdml-version="0.5">
+  <!-- WARNING! The 'metadata' section is read only. Do not edit below.
+       Changes to the metadata section in the source will not be saved. -->
+
+  <md:repository>http://cnx.org/content</md:repository>
+  <md:content-url>http://cnx.org/content/col11496/1.8</md:content-url>
+  <md:content-id>col11496</md:content-id>
+  <md:title>Anatomy &amp; Physiology</md:title>
+  
+  
+  <md:version>1.8</md:version>
+  <md:created>2013/03/06 15:41:35.897 US/Central</md:created>
+  <md:revised>2016/02/04 10:15:11.792 US/Central</md:revised>
+
+  <md:actors>
+    
+    <md:organization userid="OpenStaxCollege">
+      <md:shortname>OpenStax</md:shortname>
+      <md:fullname>OpenStax</md:fullname>
+      <md:email>info@openstax.org</md:email>
+    </md:organization>
+    
+    
+    
+    
+    <md:person userid="OSCRiceUniversity">
+      <md:firstname>Rice</md:firstname>
+      <md:surname>University</md:surname>
+      <md:fullname>Rice University</md:fullname>
+      <md:email>daniel@openstaxcollege.org</md:email>
+    </md:person>
+    
+  </md:actors>
+  <md:roles>
+    <md:role type="author">OpenStaxCollege</md:role>
+    <md:role type="maintainer">OpenStaxCollege</md:role>
+    <md:role type="licensor">OSCRiceUniversity</md:role>
+    
+    
+  </md:roles>
+
+  <md:license url="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License 4.0</md:license>
+  <!-- For information on license requirements for use or modification, see license url in the
+       above <md:license> element.
+       For information on formatting required attribution, see the URL:
+         CONTENT_URL/content_info#cnx_cite_header
+       where CONTENT_URL is the value provided above in the <md:content-url> element.
+  -->
+  
+  
+  
+  
+
+  
+
+  <md:keywordlist>
+    <md:keyword>acid-base balance</md:keyword>
+    <md:keyword>action potential</md:keyword>
+    <md:keyword>adrenal</md:keyword>
+    <md:keyword>anatomy</md:keyword>
+    <md:keyword>antibody</md:keyword>
+    <md:keyword>appendicular skeleton</md:keyword>
+    <md:keyword>atom</md:keyword>
+    <md:keyword>autonomic nervous system</md:keyword>
+    <md:keyword>axial skeleton</md:keyword>
+    <md:keyword>blood</md:keyword>
+    <md:keyword>body fluid</md:keyword>
+    <md:keyword>bone</md:keyword>
+    <md:keyword>capillary</md:keyword>
+    <md:keyword>cardiac</md:keyword>
+    <md:keyword>cardiovascular system</md:keyword>
+    <md:keyword>cell</md:keyword>
+    <md:keyword>central nervous system</md:keyword>
+    <md:keyword>chemical</md:keyword>
+    <md:keyword>circulatory pathway</md:keyword>
+    <md:keyword>connective tissue</md:keyword>
+    <md:keyword>cytoplasm</md:keyword>
+    <md:keyword>development</md:keyword>
+    <md:keyword>diet</md:keyword>
+    <md:keyword>digestion</md:keyword>
+    <md:keyword>digestive system</md:keyword>
+    <md:keyword>DNA</md:keyword>
+    <md:keyword>electrical activity</md:keyword>
+    <md:keyword>electrolyte</md:keyword>
+    <md:keyword>element</md:keyword>
+    <md:keyword>endocrine</md:keyword>
+    <md:keyword>energy</md:keyword>
+    <md:keyword>epithelial</md:keyword>
+    <md:keyword>erythrocyte</md:keyword>
+    <md:keyword>esophagus</md:keyword>
+    <md:keyword>exam</md:keyword>
+    <md:keyword>fascicle</md:keyword>
+    <md:keyword>fertilization</md:keyword>
+    <md:keyword>fetal</md:keyword>
+    <md:keyword>fluid balance</md:keyword>
+    <md:keyword>gallbladder</md:keyword>
+    <md:keyword>gland</md:keyword>
+    <md:keyword>heart</md:keyword>
+    <md:keyword>heat balance</md:keyword>
+    <md:keyword>hemostasis</md:keyword>
+    <md:keyword>homeostasis</md:keyword>
+    <md:keyword>hormone</md:keyword>
+    <md:keyword>hypothalamus</md:keyword>
+    <md:keyword>immune system</md:keyword>
+    <md:keyword>immunity</md:keyword>
+    <md:keyword>inheritance</md:keyword>
+    <md:keyword>inorganic compound</md:keyword>
+    <md:keyword>integumentary system</md:keyword>
+    <md:keyword>intestine</md:keyword>
+    <md:keyword>joint</md:keyword>
+    <md:keyword>kidney</md:keyword>
+    <md:keyword>lactation</md:keyword>
+    <md:keyword>leukocyte</md:keyword>
+    <md:keyword>liver</md:keyword>
+    <md:keyword>lung</md:keyword>
+    <md:keyword>lymphatic system</md:keyword>
+    <md:keyword>lymphocyte</md:keyword>
+    <md:keyword>metabolism</md:keyword>
+    <md:keyword>motor response</md:keyword>
+    <md:keyword>muscle</md:keyword>
+    <md:keyword>nervous system</md:keyword>
+    <md:keyword>neurological</md:keyword>
+    <md:keyword>neuron</md:keyword>
+    <md:keyword>nucleus</md:keyword>
+    <md:keyword>nutrition</md:keyword>
+    <md:keyword>organic compound</md:keyword>
+    <md:keyword>pancreas</md:keyword>
+    <md:keyword>pathogen</md:keyword>
+    <md:keyword>pectoral girdle</md:keyword>
+    <md:keyword>pelvis</md:keyword>
+    <md:keyword>peripheral nervous system</md:keyword>
+    <md:keyword>pharynx</md:keyword>
+    <md:keyword>physiology</md:keyword>
+    <md:keyword>placental hormone</md:keyword>
+    <md:keyword>platelet</md:keyword>
+    <md:keyword>protein</md:keyword>
+    <md:keyword>renal</md:keyword>
+    <md:keyword>reproduction</md:keyword>
+    <md:keyword>reproductive system</md:keyword>
+    <md:keyword>respiration</md:keyword>
+    <md:keyword>respiratory system</md:keyword>
+    <md:keyword>sensory perception</md:keyword>
+    <md:keyword>skeletal system</md:keyword>
+    <md:keyword>skeleton</md:keyword>
+    <md:keyword>skin</md:keyword>
+    <md:keyword>skull</md:keyword>
+    <md:keyword>stomach</md:keyword>
+    <md:keyword>thoracic cage</md:keyword>
+    <md:keyword>thorax</md:keyword>
+    <md:keyword>tissue</md:keyword>
+    <md:keyword>urinary system</md:keyword>
+    <md:keyword>urine</md:keyword>
+    <md:keyword>vascular system</md:keyword>
+    <md:keyword>vertebrae</md:keyword>
+    <md:keyword>water balance</md:keyword>
+  </md:keywordlist>
+
+  <md:subjectlist>
+    <md:subject>Science and Technology</md:subject>
+  </md:subjectlist>
+
+  <md:abstract>Human Anatomy and Physiology is designed for the two-semester anatomy and physiology course taken by life science and allied health students.  The textbook follows the scope and sequence of most Human Anatomy and Physiology courses, and its coverage and organization were informed by hundreds of instructors who teach the course.  Instructors can customize the book, adapting it to the approach that works best in their classroom. 
+
+The artwork for this textbook is aimed focusing student learning through a powerful blend of traditional depictions and instructional innovations.   Color is used sparingly, to emphasize the most important aspects of any given illustration.  Significant use of micrographs from the University of Michigan complement the illustrations, and provide the students with a meaningful alternate depiction of each concept.  Finally, enrichment elements provide relevance and deeper context for students, particularly in the areas of health, disease, and information relevant to their intended careers.</md:abstract>
+
+  <md:language>en</md:language>
+
+  
+
+  
+  
+  
+  
+  
+
+  <!-- WARNING! The 'metadata' section is read only. Do not edit above.
+       Changes to the metadata section in the source will not be saved. -->
+</metadata>
+
+  <col:parameters>
+    <col:param name="real-imaginary-notation" value="font"/>
+    <col:param name="and-or-notation"
+               value="propositional-logic"/>
+    <col:param name="gradient-notation" value="text"/>
+    <col:param name="mean-notation" value="bar"/>
+    <col:param name="remainder-notation" value="text"/>
+    <col:param name="conjugate-notation" value="bar"/>
+    <col:param name="imaginary-i-notation" value="i"/>
+    <col:param name="scalar-product-notation"
+               value="angle-bracket"/>
+    <col:param name="print-font-size" value="10pt"/>
+    <col:param name="curl-notation" value="text"/>
+    <col:param name="for-all-equation-layout"
+               value="symbolic"/>
+    <col:param name="vector-notation" value="bold"/>
+    <col:param name="print-paper-size" value="8.5x11"/>
+    <col:param name="print-font" value="computer-modern"/>
+    <col:param name="print-style" value="ccap-anatomy"/>
+    <col:param name="print-paragraph-spacing"
+               value="compact"/>
+  </col:parameters>
+  
+  <col:content>
+    
+      <col:module document="m46844" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.7">
+        <md:title>Preface</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Unit 1: Levels of Organization</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      
+        
+      <col:subcollection>
+        <md:title>An Introduction to the Human Body</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m45981" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m45983" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Overview of Anatomy and Physiology</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m45985" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.7">
+        <md:title>Structural Organization of the Human Body</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m45986" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Functions of Human Life</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m45988" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Requirements for Human Life</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m45989" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Homeostasis</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m45990" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Anatomical Terminology</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m45991" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Medical Imaging</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>The Chemical Level of Organization</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m45996" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m45998" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Elements and Atoms: The Building Blocks of Matter</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46000" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Chemical Bonds</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46004" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Chemical Reactions</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46006" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Inorganic Compounds Essential to Human Functioning</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46008" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Organic Compounds Essential to Human Functioning</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>The Cellular Level of Organization</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46016" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.8">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46021" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.7">
+        <md:title>The Cell Membrane</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46023" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>The Cytoplasm and Cellular Organelles</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46073" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>The Nucleus and DNA Replication</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46032" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.6">
+        <md:title>Protein Synthesis</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46034" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Cell Growth and Division</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46036" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Cellular Differentiation</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>The Tissue Level of Organization</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46045" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46046" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Types of Tissues</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46048" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Epithelial Tissue</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46049" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Connective Tissue Supports and Protects</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46055" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Muscle Tissue and Motion</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46057" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.6">
+        <md:title>Nervous Tissue Mediates Perception and Response</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46058" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Tissue Injury and Aging</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Unit 2: Support and Movement</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      
+        
+      <col:subcollection>
+        <md:title>The Integumentary System</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46059" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46060" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Layers of the Skin</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46062" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Accessory Structures of the Skin</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46064" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Functions of the Integumentary System</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46066" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Diseases, Disorders, and Injuries of the Integumentary System</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Bone Tissue and the Skeletal System</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46290" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46341" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>The Functions of the Skeletal System</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46282" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Bone Classification</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46281" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Bone Structure</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46301" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Bone Formation and Development</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46342" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Fractures: Bone Repair</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46305" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Exercise, Nutrition, Hormones, and Bone Tissue</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46295" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Calcium Homeostasis: Interactions of the Skeletal System and Other Organ Systems</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Axial Skeleton</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46347" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46344" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Divisions of the Skeletal System</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46355" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>The Skull</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46352" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>The Vertebral Column</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46350" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>The Thoracic Cage</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46348" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Embryonic Development of the Axial Skeleton</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>The Appendicular Skeleton</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46370" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46374" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>The Pectoral Girdle</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46368" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Bones of the Upper Limb</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46375" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>The Pelvic Girdle and Pelvis</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46364" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Bones of the Lower Limb</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46376" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Development of the Appendicular Skeleton</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Joints</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46402" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46383" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Classification of Joints</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46403" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Fibrous Joints</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46381" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Cartilaginous Joints</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46394" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Synovial Joints</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46398" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Types of Body Movements</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46377" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Anatomy of Selected Synovial Joints</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46388" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Development of Joints</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Muscle Tissue</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46450" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46473" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Overview of Muscle Tissues</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46476" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Skeletal Muscle</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46447" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Muscle Fiber Contraction and Relaxation</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46470" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Nervous System Control of Muscle Tension</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46480" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Types of Muscle Fibers</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46438" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Exercise and Muscle Performance</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46404" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Cardiac Muscle Tissue</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46478" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Smooth Muscle</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46407" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Development and Regeneration of Muscle Tissue</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>The Muscular System</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46492" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46487" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.2">
+        <md:title>Interactions of Skeletal Muscles, Their Fascicle Arrangement, and Their Lever Systems</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46498" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Naming Skeletal Muscles</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46484" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Axial Muscles of the Head, Neck, and Back</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46485" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.6">
+        <md:title>Axial Muscles of the Abdominal Wall and Thorax</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46495" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Muscles of the Pectoral Girdle and Upper Limbs</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46482" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Appendicular Muscles of the Pelvic Girdle and Lower Limbs</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Unit 3: Regulation, Integration, and Control</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      
+        
+      <col:subcollection>
+        <md:title>The Nervous System and Nervous Tissue</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46504" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46500" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.6">
+        <md:title>Basic Structure and Function of the Nervous System</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46509" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Nervous Tissue</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46531" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>The Function of Nervous Tissue</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46526" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>The Action Potential</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46503" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Communication Between Neurons</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Anatomy of the Nervous System</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46528" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46535" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>The Embryologic Perspective</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46533" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>The Central Nervous System</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46719" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Circulation and the Central Nervous System</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46553" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>The Peripheral Nervous System</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>The Somatic Nervous System</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46561" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46577" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.6">
+        <md:title>Sensory Perception</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46557" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Central Processing</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46574" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Motor Responses</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>The Autonomic Nervous System</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46590" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46582" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Divisions of the Autonomic Nervous System</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46579" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.2">
+        <md:title>Autonomic Reflexes and Homeostasis</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46581" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.2">
+        <md:title>Central Control</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46587" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Drugs that Affect the Autonomic System</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>The Neurological Exam</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46593" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46594" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Overview of the Neurological Exam</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46650" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>The Mental Status Exam</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46607" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>The Cranial Nerve Exam</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46640" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>The Sensory and Motor Exams</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46604" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>The Coordination and Gait Exams</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>The Endocrine System</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46682" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46656" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>An Overview of the Endocrine System</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46667" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Hormones</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46699" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>The Pituitary Gland and Hypothalamus</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46700" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>The Thyroid Gland</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46687" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>The Parathyroid Glands</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46684" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>The Adrenal Glands</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46693" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>The Pineal Gland</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46670" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Gonadal and Placental Hormones</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46685" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>The Endocrine Pancreas</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46680" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Organs with Secondary Endocrine Functions</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46658" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Development and Aging of the Endocrine System</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Unit 4: Fluids and Transport</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      
+        
+      <col:subcollection>
+        <md:title>The Cardiovascular System: Blood</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46703" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46710" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.7">
+        <md:title>An Overview of Blood</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46691" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Production of the Formed Elements</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46707" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Erythrocytes</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46701" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Leukocytes and Platelets</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46705" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Hemostasis</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46708" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.6">
+        <md:title>Blood Typing</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>The Cardiovascular System: The Heart</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46679" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46676" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Heart Anatomy</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46664" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Cardiac Muscle and Electrical Activity</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46661" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Cardiac Cycle</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46672" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Cardiac Physiology</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46673" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Development of the Heart</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>The Cardiovascular System: Blood Vessels and Circulation</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46600" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46597" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Structure and Function of Blood Vessels</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46635" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Blood Flow, Blood Pressure, and Resistance</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46586" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Capillary Exchange</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46603" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Homeostatic Regulation of the Vascular System</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46646" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Circulatory Pathways</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46610" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Development of Blood Vessels and Fetal Circulation</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>The Lymphatic and Immune System</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46573" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46563" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Anatomy of the Lymphatic and Immune Systems</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46571" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Barrier Defenses and the Innate Immune Response</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46560" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>The Adaptive Immune Response: T lymphocytes and Their Functional Types</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46558" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>The Adaptive Immune Response: B-lymphocytes and Antibodies</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46569" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>The Immune Response against Pathogens</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46566" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Diseases Associated with Depressed or Overactive Immune Responses</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46583" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Transplantation and Cancer Immunology</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Unit 5: Energy, Maintenance, and Environmental Exchange</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      
+        
+      <col:subcollection>
+        <md:title>The Respiratory System</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46523" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.7">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46548" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.9">
+        <md:title>Organs and Structures of the Respiratory System</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46551" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>The Lungs</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46549" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.6">
+        <md:title>The Process of Breathing</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46521" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Gas Exchange</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46545" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Transport of Gases</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46524" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Modifications in Respiratory Functions</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46518" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Embryonic Development of the Respiratory System</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>The Digestive System</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46505" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46506" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Overview of the Digestive System</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46502" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Digestive System Processes and Regulation</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46511" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>The Mouth, Pharynx, and Esophagus</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46517" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>The Stomach</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46512" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>The Small and Large Intestines</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46496" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Accessory Organs in Digestion: The Liver, Pancreas, and Gallbladder</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46501" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Chemical Digestion and Absorption: A Closer Look</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Metabolism and Nutrition</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46458" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46489" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Overview of Metabolic Reactions</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46451" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Carbohydrate Metabolism</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46462" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Lipid Metabolism</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46493" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Protein Metabolism</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46466" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Metabolic States of the Body</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46456" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Energy and Heat Balance</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46467" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Nutrition and Diet</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>The Urinary System</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46430" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46432" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Physical Characteristics of Urine</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46427" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Gross Anatomy of Urine Transport</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46429" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Gross Anatomy of the Kidney</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46431" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Microscopic Anatomy of the Kidney</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46433" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Physiology of Urine Formation</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46443" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Tubular Reabsorption</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46435" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Regulation of Renal Blood Flow</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46424" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Endocrine Regulation of Kidney Function</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46434" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.6">
+        <md:title>Regulation of Fluid Volume and Composition</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46446" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.6">
+        <md:title>The Urinary System and Homeostasis</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Fluid, Electrolyte, and Acid-Base Balance</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46415" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46411" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Body Fluids and Fluid Compartments</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46416" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Water Balance</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46414" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Electrolyte Balance</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46409" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Acid-Base Balance</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46413" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Disorders of Acid-Base Balance</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Unit 6: Human Development and the Continuity of Life</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      
+        
+      <col:subcollection>
+        <md:title>The Reproductive System</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46385" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46400" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Anatomy and Physiology of the Male Reproductive System</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46392" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Anatomy and Physiology of the Female Reproductive System</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46408" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.5">
+        <md:title>Development of the Male and Female Reproductive Systems</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+    
+      
+        
+      <col:subcollection>
+        <md:title>Development and Inheritance</md:title>
+        
+        
+        
+
+        <col:content>
+          
+    
+      <col:module document="m46339" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.4">
+        <md:title>Introduction</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46308" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Fertilization</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46319" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Embryonic Development</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46316" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Fetal Development</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46353" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Maternal Changes During Pregnancy, Labor, and Birth</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46335" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Adjustments of the Infant at Birth and Postnatal Stages</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46325" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Lactation</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+    
+      <col:module document="m46311" version="latest"
+                  repository="http://cnx.org/content"
+                  cnxorg:version-at-this-collection-version="1.3">
+        <md:title>Patterns of Inheritance</md:title>
+        
+        
+        
+      </col:module>
+        
+      
+    
+        </col:content>
+      </col:subcollection>
+    
+        </col:content>
+      </col:subcollection>
+    
+  </col:content>
+</col:collection>
