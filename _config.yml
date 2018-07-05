@@ -7,9 +7,9 @@ markdown:         kramdown
 
 # Setup
 title:            'Anatomy and Physiology'
-tagline:          'from http://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@9.1 (CC-BY)'
+tagline:          'from http://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@10.1 (CC-BY)'
 url:              https://github.com/philschatz/anatomy-book
-origin:           http://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@9.1
+origin:           http://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@10.1
 
 author:
   name:           'Openstax'
@@ -18,7 +18,7 @@ author:
 paginate:         5
 
 # Custom vars
-version:          9.1
+version:          10.1
 
 bookviewer:       http://philschatz.com/book-viewer
 
