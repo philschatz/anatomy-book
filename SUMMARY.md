@@ -4,9 +4,7 @@ layout: page
 ---
 
 
-<div data-type="abstract">
-Anatomy and Physiology is a dynamic textbook for the two-semester human anatomy and physiology course for life science and allied health majors. The book is organized by body system and covers standard scope and sequence requirements. Its lucid text, strategically constructed art, career features, and links to external learning tools address the critical teaching and learning challenges in the course. The web-based version of Anatomy and Physiology also features links to surgical videos, histology, and interactive diagrams.
-</div>
+<div data-type="abstract"></div>
 
 1.  {: .preface} [Preface](contents/m46844.md)
 2.  {: .part} Unit 1: Levels of Organization
@@ -96,7 +94,7 @@ Anatomy and Physiology is a dynamic textbook for the two-semester human anatomy 
         1.  [Interactions of Skeletal Muscles, Their Fascicle Arrangement, and Their Lever Systems](contents/m46487.md)
         2.  [Naming Skeletal Muscles](contents/m46498.md)
         3.  [Axial Muscles of the Head, Neck, and Back](contents/m46484.md)
-        4.  [Axial Muscles of the Abdominal Wall and Thorax](contents/m46485.md)
+        4.  [Axial Muscles of the Abdominal Wall, and Thorax](contents/m46485.md)
         5.  [Muscles of the Pectoral Girdle and Upper Limbs](contents/m46495.md)
         6.  [Appendicular Muscles of the Pelvic Girdle and Lower Limbs](contents/m46482.md)
 
